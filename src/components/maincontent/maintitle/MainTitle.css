@@ -1,0 +1,13 @@
+.mainTitle {
+  display: flex;
+  align-items: center;
+  height: 200px;
+}
+.mainTitleLetters {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.mainTitleLetters_Letter {
+  font-size: 30px;
+}
