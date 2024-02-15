@@ -7,7 +7,17 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  user-select: none;
 }
 .mainTitleLetters_Letter {
+  margin: 5px;
   font-size: 70px;
+}
+.mainTitleLetters_Space {
+  margin: 5px 20px;
+}
+@keyframes letterAnimation {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
 }

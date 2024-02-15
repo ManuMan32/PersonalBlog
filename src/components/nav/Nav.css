@@ -18,7 +18,6 @@
 }
 .navListElement:has(img) {
   flex: 1;
-  border-right: 1px solid var(--button-active);
 }
 .navListElement img {
   width: 50px;
