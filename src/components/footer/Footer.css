@@ -3,6 +3,7 @@
   align-items: center;
   min-height: 100px;
   background-color: var(--ui1);
+  margin-top: 40px;
 }
 .footerLinks {
   flex: 1;

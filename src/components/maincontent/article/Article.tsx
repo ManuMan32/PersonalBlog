@@ -6,8 +6,8 @@ import Title from "./title/Title";
 const Article: React.FC = () => {
   return (
     <article className="article">
-      <Title>Carajo puta</Title>
-      <Subtitle>Subtitulo Q!</Subtitle>
+      <Title>Title</Title>
+      <Subtitle>Subtitle!</Subtitle>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus sint vero corrupti deleniti beatae, ad itaque maxime quibusdam omnis modi a, molestiae dolorem ex incidunt aliquid rem eos vel doloribus.</p>
       <FloatImg direction="left" imgSrc="testimg1.jpg" />
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nisi ab neque veritatis amet inventore qui enim totam, soluta expedita? Eos dolorum quas, tempora blanditiis quaerat numquam quisquam repellat qui? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quis suscipit enim. Eius dicta reprehenderit numquam, veritatis ullam rerum ducimus optio doloremque repellat est alias libero laborum voluptates.
