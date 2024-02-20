@@ -1,19 +1,60 @@
+import { useGlobalContext } from "../../../globalContext";
 import "./Article.css";
 import FloatImg from "./floatimg/FloatImg";
 import Galery from "./galery/Galery";
 import Subtitle from "./subtitle/Subtitle";
 import Title from "./title/Title";
+import { useEffect, useState } from "react"
+interface Article {
+  title: string
+  content: string[][]
+}
 const Article: React.FC = () => {
+  let artObject: Article = {
+    title: "Error",
+    content: [
+      ["p", "See the browser's console for more information."]
+    ]
+  };
+  const { currentArticle } = useGlobalContext();
+  const [ components, setComponents ] = useState<string[][]>(artObject.content);
+  const [ isLoading, setIsLoading ] = useState<boolean>(true);
+  useEffect(() => {
+    const fetchData = async (currentArticle: number): Promise<void> => {
+      try {
+        const response = await fetch("http://localhost:5173/src/articles.json");
+        if (!response.ok) { throw new Error("The articles data couldn't be loaded."); }
+        const data = await response.json();
+        artObject = data[currentArticle.toString()];
+        setComponents(artObject.content);
+        setIsLoading(false);
+      } catch (e) {
+        console.error("Fetching error: ", e);
+      }
+    }
+    fetchData(currentArticle);
+  }, [])
+
+  function returnElement(key: string, content: string, uniqKey: number): JSX.Element {
+    switch (key) {
+      case "title": return <Title key={uniqKey}>{content}</Title>
+      case "subtitle": return <Subtitle key={uniqKey}>{content}</Subtitle>
+      case "p": return <p key={uniqKey}>{content}</p>
+      case "imgleft": return <FloatImg key={uniqKey} direction="left" imgSrc={content} />
+      default: return <span key={uniqKey} style={{ color: "red", display: "block" }}>_Error loading the article content_</span>
+    }
+  }
+  if (isLoading) return (
+    <article className="article">
+      Loading...
+    </article>
+  )
   return (
     <article className="article">
-      <Title>Title</Title>
-      <Subtitle>Subtitle!</Subtitle>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus sint vero corrupti deleniti beatae, ad itaque maxime quibusdam omnis modi a, molestiae dolorem ex incidunt aliquid rem eos vel doloribus.</p>
-      <FloatImg direction="left" imgSrc="testimg1.jpg" />
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nisi ab neque veritatis amet inventore qui enim totam, soluta expedita? Eos dolorum quas, tempora blanditiis quaerat numquam quisquam repellat qui? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quis suscipit enim. Eius dicta reprehenderit numquam, veritatis ullam rerum ducimus optio doloremque repellat est alias libero laborum voluptates.
-      <FloatImg direction="right" imgSrc="testimg2.jpg" />
-      Nihil, eius? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, culpa fugiat quia aperiam et, aut adipisci itaque voluptatum cumque autem amet eius nobis architecto odio magni fugit sint ipsam facilis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere itaque repellendus minus cupiditate qui deserunt delectus ex quia architecto aliquam accusantium non sunt aspernatur cum ab magni, distinctio nesciunt voluptates.</p>
-      <Galery images={["testimg2.jpg", "testimg1.jpg", "testimg2.jpg"]} height="300px" />
+      {components.map((comp, i) => { 
+        console.log(comp);
+        return returnElement(comp[0], comp[1], i);
+      })}
     </article>
   )
 }

@@ -1,0 +1,11 @@
+{
+  "0": {
+    "maintitle": "First JSON article",
+    "content": [
+      ["title", "Title of the article"],
+      ["p", "I'm reading a JSON file I can't believe it. I'm reading a JSON file I can't believe it. I'm reading a JSON file I can't believe it. I'm reading a JSON file I can't believe it. I'm reading a JSON file I can't believe it."],
+      ["imgleft", "testimg1.jpg"],
+      ["p", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga asperiores vero, reprehenderit neque, totam perferendis, consequatur dolorum voluptatem quidem atque inventore quas alias quod facilis natus corporis in tempore accusantium? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga asperiores vero, reprehenderit neque, totam perferendis, consequatur dolorum voluptatem quidem atque inventore quas alias quod facilis natus corporis in tempore accusantium?"]
+    ]
+  }
+}
