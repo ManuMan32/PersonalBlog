@@ -1,7 +1,8 @@
 {
   "0": {
     "maintitle": "The start of my coding journey",
-    "description": "The 13 year old boy learning if statements",
+    "description": "The world of programming is too immense for a 12-year-old boy, isn't it?",
+    "image": "code1.jpeg",
     "content": [
       ["title", "My beginnings in programming"],
       ["p", "When I was 12 years old, I loved playing video games. It was my favorite hobby, and I spent countless hours in front of the computer testing new game releases and chatting with gaming communities. While I knew programming existed, learning to code never crossed my mind."],
@@ -24,8 +25,9 @@
     ]
   },
   "1": {
-    "maintitle": "The worst year of my life",
-    "description": "The weak boy becoming the most confident of his class",
+    "maintitle": "Social Media in young people",
+    "description": "How they affect behavior, according to my point of view living it day by day.",
+    "image": "friends1.jpeg",
     "content": [
       ["title", "The most difficult stage of my life"],
       ["p", "I was a weak, annoying, and cowardly boy. Nobody said anything to me because, in primary school, it was 'normal' for a kid to exhibit those behaviors. Then, when I started high school, things worsened. The only thing I was doing with my life was playing video games and watching videos on my computer. Nothing productive."],
@@ -60,5 +62,11 @@
       ["p", "Am I satisfied with where I am now? I'll be honest: I'm grateful for the progress I've made, but I haven't yet reached my ultimate destination. I have countless plans and aspirations that drive me each morning, imagining the bright future that awaits me."],
       ["p", "I hope you, too, find your purpose and motivation to face each day with enthusiasm. Remember, if life treats you poorly, it's up to YOU to initiate change. While circumstances play a role, it's your determination and hard work that ultimately propel you forward. Without them, you'll remain stagnant."]
     ]
+  },
+  "2": {
+    "maintitle": "My experience in high school",
+    "description": "Best or worst years? Is the education system beneficial?",
+    "image": "me5.jpg",
+    "content": []
   }
 }

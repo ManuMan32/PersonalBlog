@@ -1,14 +1,19 @@
+import { ArticleType } from "../../model";
 import "./ArticlePreview.css";
-const ArticlePreview: React.FC = () => {
+interface Props {
+  articleObject: ArticleType
+}
+const ArticlePreview: React.FC<Props> = ({ articleObject }) => {
+  console.log(articleObject);
   return (
     <div className="articlePreview">
       <div className="articlePreviewImg">
-        <img src="testimg1.jpg" alt="coso" />
+        <img src={articleObject.image} alt={articleObject.image} />
       </div>
       <div className="articlePreviewContent">
-        <span className="articlePreview_title">Article title (Article title)</span>
+        <span className="articlePreview_title">{articleObject.maintitle}</span>
         <p className="articlePreview_description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus numquam aliquid alias mollitia aliquam laborum officiis rem. Odit non ipsam officiis totam, consequuntur nobis sapiente perferendis quas quam, eaque corporis.
+          {articleObject.description}
         </p>
       </div>
     </div>
