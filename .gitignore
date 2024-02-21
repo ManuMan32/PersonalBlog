@@ -16,6 +16,7 @@ vite.config.ts
 node_modules
 dist
 dist-ssr
+public
 *.local
 
 # Editor directories and files
