@@ -1,11 +1,26 @@
 {
   "0": {
-    "maintitle": "First JSON article",
+    "maintitle": "The start of my coding journey",
+    "description": "The 13 year old boy learning if statements",
     "content": [
-      ["title", "Title of the article"],
-      ["p", "I'm reading a JSON file I can't believe it. I'm reading a JSON file I can't believe it. I'm reading a JSON file I can't believe it. I'm reading a JSON file I can't believe it. I'm reading a JSON file I can't believe it."],
-      ["imgleft", "testimg1.jpg"],
-      ["p", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga asperiores vero, reprehenderit neque, totam perferendis, consequatur dolorum voluptatem quidem atque inventore quas alias quod facilis natus corporis in tempore accusantium? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga asperiores vero, reprehenderit neque, totam perferendis, consequatur dolorum voluptatem quidem atque inventore quas alias quod facilis natus corporis in tempore accusantium?"]
+      ["title", "My beginnings in programming"],
+      ["p", "When I was 12 years old, I loved playing video games. It was my favorite hobby, and I spent countless hours in front of the computer testing new game releases and chatting with gaming communities. While I knew programming existed, learning to code never crossed my mind."],
+      ["p", "My introduction to the world of coding was quite interesting. One day, while watching YouTube videos about the famous game \"Geometry Dash,\" I stumbled upon a tutorial for Cocos2D, the program used to develop the game. I clicked out of curiosity, unaware that I was stepping into the world that would shape my future."],
+      ["p", "The program seemed quite complex, and my 12-year-old self didn't understand anything. However, in the comments of the video, a wonderful person (whom I am grateful for) appeared and explained that a simpler tool called \"Game Maker\" existed."],
+      ["p", "Driven by curiosity, I searched for \"Game Maker\" on YouTube and watched the first tutorial that appeared in Spanish. That's when my journey began."],
+      ["galery", ["testimg1.jpg"]],
+      ["p", "The program had a Drag and Drop system similar to Scratch, making it much easier for my 12-year-old self to learn."],
+      ["p", "When I created my first games and showed them to my friends, they were amazed. Obviously, they weren't anything extraordinary, but we were young and easily impressed by anything wonderful."],
+      ["p", "In addition to Drag and Drop, the program came with its own language called GML, which allowed you to create more complex and professional games. So, when I turned 13, I made a decision to put effort into learning it."],
+      ["p", "And there I was! A 13-year-old boy learning if statements, for loops, arrays, and algorithms. Obviously, my code was horrible. I didn't even know that a switch statement existed, so I created infinite if chains. But my code worked! And I was so proud of it."],
+      ["subtitle", "Jumping World:"],
+      ["p", "At that age, I met another young boy who was also coding with GM. We decided to collaborate on a project called \"Jumping World\" (which I decided to remaster in 2024, but that's for another post!)"],
+      ["p", "That was the best experience I've ever had on my coding journey. My friend was gifted. He started coding when he was 8, and he had knowledge on how to write clean and effective code. So, when he saw my code... well, let's just say he screamed in horror."],
+      ["p", "He taught me every clean code technique: the switch statements, how to manipulate arrays correctly, how to manage external files, etc. Most of the things I know about programming now are thanks to the Jumping World experience."],
+      ["subtitle", "The dark phase of my life:"],
+      ["p", "2021 was the worst year of my life (I have a post specifically for this, it should appear in the aside so you can take a look). I spent 2021 - 2023 without using Game Maker. Then, by July of 2023, when I was mentally okay, I decided to learn HTML, CSS, and JavaScript. That was the best decision I've ever made because all the GameMaker experience helped me learn JavaScript very quickly. The only new things were array methods, functions, and DOM manipulation."],
+      ["p", "And here we are! In 2024, at 17 years old, I'm learning TypeScript, React, and then I'll move on to backend and Python. Such an interesting journey, full of game development."],
+      ["subtitle", "Thank you for reading my story, I'm glad you were interested!"]
     ]
   }
 }

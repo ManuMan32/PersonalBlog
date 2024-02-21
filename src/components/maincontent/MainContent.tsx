@@ -7,11 +7,13 @@ import { useState, useEffect } from "react";
 import { useGlobalContext } from "../../globalContext";
 interface Article {
   maintitle: string
+  description: string
   content: string[][]
 }
 const MainContent: React.FC = () => {
   let artObject: Article = {
     maintitle: "Error",
+    description: "Error",
     content: [
       ["p", "See the browser's console for more information."]
     ]

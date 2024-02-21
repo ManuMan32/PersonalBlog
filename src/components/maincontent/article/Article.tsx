@@ -1,5 +1,6 @@
 import "./Article.css";
 import FloatImg from "./floatimg/FloatImg";
+import Galery from "./galery/Galery";
 import Subtitle from "./subtitle/Subtitle";
 import Title from "./title/Title";
 interface Props {
@@ -7,12 +8,13 @@ interface Props {
   isLoading: boolean
 }
 const Article: React.FC<Props> = ({ components, isLoading }) => {
-  function returnElement(key: string, content: string, uniqKey: number): JSX.Element {
+  function returnElement(key: string, content: string | string[], uniqKey: number): JSX.Element {
     switch (key) {
-      case "title": return <Title key={uniqKey}>{content}</Title>
-      case "subtitle": return <Subtitle key={uniqKey}>{content}</Subtitle>
+      case "title": return <Title key={uniqKey}>{content as string}</Title>
+      case "subtitle": return <Subtitle key={uniqKey}>{content as string}</Subtitle>
       case "p": return <p key={uniqKey}>{content}</p>
-      case "imgleft": return <FloatImg key={uniqKey} direction="left" imgSrc={content} />
+      case "imgleft": return <FloatImg key={uniqKey} direction="left" imgSrc={content as string} />
+      case "galery": return <Galery images={content as string[]} height="300px"/>
       default: return <span key={uniqKey} style={{ color: "red", display: "block" }}>_Error loading the article content_</span>
     }
   }
