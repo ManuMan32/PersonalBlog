@@ -10,14 +10,14 @@
   user-select: none;
 }
 .mainTitleLetters_Letter {
-  margin: 5px;
-  font-size: 70px;
+  margin: 2px;
+  font-size: 45px;
 }
 .mainTitleLetters_Space {
-  margin: 5px 20px;
+  margin: 5px 15px;
 }
 @keyframes letterAnimation {
   0% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
+  50% { transform: translateY(-12px); }
   100% { transform: translateY(0); }
 }
