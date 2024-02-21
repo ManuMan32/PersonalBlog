@@ -22,5 +22,43 @@
       ["p", "And here we are! In 2024, at 17 years old, I'm learning TypeScript, React, and then I'll move on to backend and Python. Such an interesting journey, full of game development."],
       ["subtitle", "Thank you for reading my story, I'm glad you were interested!"]
     ]
+  },
+  "1": {
+    "maintitle": "The worst year of my life",
+    "description": "The weak boy becoming the most confident of his class",
+    "content": [
+      ["title", "The most difficult stage of my life"],
+      ["p", "I was a weak, annoying, and cowardly boy. Nobody said anything to me because, in primary school, it was 'normal' for a kid to exhibit those behaviors. Then, when I started high school, things worsened. The only thing I was doing with my life was playing video games and watching videos on my computer. Nothing productive."],
+      ["p", "My body weakened with each passing day until I reached a dark phase, and I began to change..."],
+      ["subtitle", "2021 / 2024"],
+      ["galery", ["testimg1.jpg", "testimg2.jpg"]],
+      ["subtitle", "2021:"],
+      ["p", "This was, by far, the worst year of my entire life. It began as I described before: I was a weak and annoying boy."],
+      ["p", "When my second year of high school started, I didn’t have any friends because I changed schools after primary graduation. Due to the ongoing pandemic, the school year was divided into 'bubbles' of students, with some weeks being in-person and others virtual."],
+      ["p", "The few people I talked to in 2020 weren't in my bubble, so I had to make new friends because there weren't many options. It was difficult to interact with kids from other groups due to the pandemic restrictions, and even talking with my own classmates was challenging."],
+      ["p", "Unfortunately, I ended up in a group of aimless, misogynistic, and foolish boys. Since I was the best student in my class, they used to ask me for homework because, according to them, it was a form of 'friendship'."],
+      ["p", "They manipulated me in a lot of ways. I won't go into detail about all the situations because I don't want to relive that year. In addition to the tough high school experience, my family noticed that I was becoming weaker and neglecting my physical appearance, causing them to lose their respect for me."],
+      ["p", "And what did I do during my days? The same as the previous year: playing video games, listening to music, and doing absolutely nothing productive. I couldn't comprehend that all my suffering was due to my lifestyle, not just unlucky circumstances."],
+      ["p", "By the end of the year, I was alone, weak, without family support, and no one was there to save me. November 2021 was the closest I had ever been to my breaking point, but then in December... things changed."],
+      [],
+      ["p", "While watching YouTube videos, I stumbled upon a specific and intriguing topic called 'self-improvement'. My family had always dismissed such content as stupid (yet ironically, they had never actually watched any of it). Initially, I rejected the idea, but my self-loathing was so intense that I forced myself to give it a chance."],
+      ["p", "In those videos, I encountered some of the toughest lessons I had ever heard in December 2021: YOU are the only one responsible for your suffering, if people mistreat you, it's because they don't respect you, if you constantly complain, things won't change, pain equals change, and so on."],
+      ["p", "It was then that I realized I had control over my life, and although it seemed impossible, I could change it."],
+      ["subtitle", "2022:"],
+      ["p", "January 1st, I said: \"This is going to be my best year\" (Spoiler: it wasn't, but...)"],
+      ["p", "I began applying those principles, and my life started changing drastically. It was tough for a 15-year-old boy to come to terms with his perceived ugliness, and even tougher when people mocked his efforts to change. But what mattered most was that I never gave up."],
+      ["p", "One of the most significant events of the year occurred in August-September when I experienced my first existential crisis. I questioned my daily struggle for improvement: What's the point? Why continue living and working when I'm just an insignificant person? Despite this crisis, I refused to give up. Instead, I delved into life philosophy, contemplating these existential questions, essential for future growth."],
+      ["p", "It was a year filled with suffering, discipline, false friendships, shame, and self-hatred. I didn't start seeing results until the final months of the year, but what transpired next was nothing short of incredible to me."],
+      ["subtitle", "2023:"],
+      ["p", "Not the best year of my life, but it was the one in which I made the most progress. I discovered the benefits of regular exercise, learned how to cultivate genuine friendships, took up volleyball, and expanded my social circle. It was also the year I began learning web development and created my Twitter account."],
+      ["p", "Most importantly: I found my personal style. Embracing messy hair and sports clothes made me feel more confident and attractive."],
+      ["subtitle", "Compare January 2023 / December 2023"],
+      ["galery", ["testimg1.jpg", "testimg2.jpg"]],
+      ["subtitle", "2024:"],
+      ["p", "Was 2021 really three years ago? It felt like a decade, but what sticks with me is the transformation I've undergone. Self-improvement and challenges are my new lifestyle. This journey has made me incredibly confident. Those who once laughed at me in class now find themselves uneasy in my presence. Being the most confident person in a group is an indescribable feeling of triumph."],
+      ["p", "I share my story not out of egocentrism but because I believe that anyone willing to endure the pain of change can create a remarkable life. My life stands as a testament to that truth."],
+      ["p", "Am I satisfied with where I am now? I'll be honest: I'm grateful for the progress I've made, but I haven't yet reached my ultimate destination. I have countless plans and aspirations that drive me each morning, imagining the bright future that awaits me."],
+      ["p", "I hope you, too, find your purpose and motivation to face each day with enthusiasm. Remember, if life treats you poorly, it's up to YOU to initiate change. While circumstances play a role, it's your determination and hard work that ultimately propel you forward. Without them, you'll remain stagnant."]
+    ]
   }
 }
