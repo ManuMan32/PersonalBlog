@@ -144,5 +144,27 @@
       ["p", "A few months ago, in December 2023, my friend and I decided to remaster the game. We didn't spend much time on it since he's busy with his studies and I have been prioritizing other projects more, but I'm sure that one day we will finish the remaster and revive the community. This is a video that we shared as a preview:"],
       ["video", "mierda de día"]
     ]
+  },
+  "5": {
+    "maintitle": "My X journey",
+    "description": "How I started and how I managed to reach where I am.",
+    "image": "testimg2.jpg",
+    "content": [
+      ["title", "Starting in my favorite social media right now"],
+      ["p", "While learning JavaScript around September 2023, I decided to create a YouTube channel to showcase my first project. It was a fairly simple memory game, but one I was very proud of as my first \"big\" project. My initial plan was just to share my work on YouTube, but my father, who knows more about the world of programming than I do, recommended that I create a Twitter account and share my work there."],
+      ["p", "I hesitated at first because I had heard negative things about the platform. I had the idea that it was mostly for discussing politics and engaging in meaningless dramas (which is partly true, but the niche I was getting into was moving away from those attitudes). Eventually, I was convinced, and I opened a Twitter account in September 2023. Initially, I didn't pay much attention to it, only occasionally posting a tweet, but in October, I decided to get serious."],
+      ["p", "I only had 4 followers, so I decided to do something to start building an online presence: I would post tweets every day, comment on other people's posts, and start following many people in the community."],
+      ["p", "Initially, it wasn't because of my tweets (which had almost no likes), but the comments made me grow. I have to admit, I was one of those people who said \"let's connect\" in every post I saw about this. It's embarrassing, but it had to start somehow."],
+      ["p", "That's when I saw several posts of people doing a challenge called \"100 days of code\". This type of posts caught my attention a lot. At first, I didn't know if they followed a set path or if they had mentors telling them what to do, but upon further investigation, I realized that it was simply like a diary of your daily learning."],
+      ["p", "Without hesitation, I joined the challenge. At that time, I was learning the last topics of my first JavaScript course, and today, as I write this article (February 22, 2024), I'm on day 122. It's incredible the amount of things I've learned, the people I've known, the projects I've created, and the support I've received throughout this adventure. It was something I never imagined would end this way."],
+      ["p", "And that has been my strategy from October 2023 to February 2024: 100 days of code, daily posts, and comments on other people tweets. I've tried different things such as threads, retweets, and quotes, but none of them have been as effective. I simply saw what worked for me, I was consistent, and I built my community."],
+      ["subtitle", "What would you recommend to a person who is starting out in X?"],
+      ["p", "1- Start: It may sound trivial, but just begin posting and engaging with the platform. You'll learn from your mistakes as you go along."],
+      ["p", "2- Stand out: With thousands already doing what you're doing, differentiation is key to success. Find your unique angle or perspective."],
+      ["p", "3- Experiment: Step out of your comfort zone. Remember, life is short, and you're not a celebrity. Feel free to try new things."],
+      ["p", "4- Persistence and consistency: There will be weeks where you might lose followers despite your best efforts. This is normal. Stay dedicated and keep producing content."],
+      ["p", "5- Cultivate fans, not just followers: Move beyond generic \"let's connect\" approaches. Provide genuine reasons for people to follow you. Be approachable and engage with other users, especially smaller accounts. You'll find it easy to make friends on this platform."],
+      ["p", "In summary, the journey on X is a roller coaster. With only four months of experience, I can't offer too much, but these are the lessons I've learned so far. Remember to enjoy the process, not just the end result."]
+    ]
   }
 }
