@@ -29,6 +29,45 @@
     "description": "How they affect behavior, according to my point of view living it day by day.",
     "image": "friends1.jpeg",
     "content": [
+      ["title", "The generation of instant gratification."],
+      ["p", "First, let's talk about the positie thinks."],
+      ["p", "I didn't install Instagram until I was 15. You might think that maybe that's a very good thing, but the truth is, it's not. Nowadays, your Instagram account is like your letter of introduction to new young people. Not having one is like being completely invisible."],
+      ["p", "You're reading this and you're probably thinking: <i>What?</i>"],
+      ["p", "Let me explain. Depending on your age or location, this may sound strange, but there are people who, when they see someone attractive on the street, the first thing they do is ask for their Instagram. Do you understand the point?"],
+      ["p", "I want to start by talking about this app, which is the one I have the most experience with, to be able to show you how it can be a tool instead of a waste of time."],
+      ["p", "Since I made my account in 2022 and worried about having a good profile, I've met and talked to new people, learned a lot of things from others, and understood many current concepts. Does Instagram somehow improve your social skills as a young person? Yes, it does. As much as it may be hard to admit, this social media platform is the only one that helps you establish a good image in front of other young people."],
+      ["p", "BUT READ THIS PARAGRAPH, BEFORE MY MESSAGE IS MISINTERPRETED! I'm not saying that people who don't have Instagram or aren't active on the platform are considered friendless social failures. Each person is different and having Instagram does not make you better or worse. I'm only commenting on the meaning that young people give it. If you want to be someone who works in the shadows and doesn't want to be distracted by social things, it seems completely acceptable to me that you don't want to install this app, I'm not at all recommending that you be the same as others."],
+      ["p", "That's why I want you to read this complex and stupid world that is Instagram, in which today's young people are immersed."],
+      ["galery", ["testimg1.jpg"]],
+      ["subtitle", "Behaviours on Instagram:"],
+      ["p", "The normal thing is that you upload to your Instagram story if you have done something interesting that day, and here a curious behavior comes into play: the likes on the stories. If you upload a photo at the gym showing your muscles, and a guy likes it, what does it mean? Does he think you have very good results? Does he like the photo? Does he like you? You will never know. You will have to deduce it depending on who the person is."],
+      ["p", "When you are interested in someone, the most 'normal' thing to do to get their attention and give them signs is to start following them on Instagram and occasionally like their stories. In fact, it is not uncommon for strangers to message you on your Instagram account, so I have met many people who are my friends today. This way, if you like someone, you can simply talk to them through this app and see if they engage in the conversation."],
+      ["p", "But of course, just because someone talks to you or likes your stories doesn't mean they like you. That's the problem with Instagram; you never know what people's intentions are."],
+      ["p", "This leads to a current problem for young people: they are very paranoid when it comes to social media. They give too much importance to who sees their stories, who likes them, who talks to them, who views their account, who liked X reel, etc. I personally have already been through this, and I can say that letting yourself be manipulated by these stimuli is the most depressing feeling that exists."],
+      ["p", "I still have Instagram, but I use it very occasionally. As I said before, the idea is to know how to use it well. The only two things I do in this app are: polish my profile to have a good image and watch reels and stories from certain people who I think create good content."],
+      ["p", "But it's too much Instagram for now. Let's talk about other social medias:"],
+      ["subtitle", "Twitter / X"],
+      ["p", "There aren't too many things to talk about this platform. Not many young people use it to create content. They typically post hints of love and retweet posts with which they feel identified. From time to time it gets interesting when there are fights within the posts. That's another use they give to social media: fighting and criticizing each other, and Twitter is usually the most common place where these things happen."],
+      ["subtitle", "TikTok"],
+      ["p", "Probably the most used among young people, but I can't say much since I never used it. I only installed it once, and it was the most disgusting thing I've ever seen in my life."],
+      ["p", "Studying the behavior of young people on this app would be enough for another entire article..."],
+      ["subtitle", "WhatsApp"],
+      ["p", "There are two types of young people: The mysterious ones who have their last seen and online status deactivated, in addition to having the option to delete messages that have been in the chat history for a long time. And then there are those who don't change any settings, the 'paranoid' ones who look at the last time someone logged in and draw conclusions from it."],
+      ["p", "------"],
+      ["p", "In conclusion, social networks are a medium that defines the behavior and image of young people today. If you are older, you may not fully understand the reason for this, but as a 17-year-old boy who lives in the digital generation, the experiences are very real, and many times parents are not present in their children's lives to explain what is wrong and what is right to do on the Internet."]
+    ]
+  },
+  "2": {
+    "maintitle": "My experience in high school",
+    "description": "Best or worst years? Is the education system beneficial?",
+    "image": "me5.jpg",
+    "content": []
+  },
+  "3": {
+    "maintitle": "The worst year of my life",
+    "description": "The weak boy becoming the most confident of his class.",
+    "image": "friends1.jpeg",
+    "content": [
       ["title", "The most difficult stage of my life"],
       ["p", "I was a weak, annoying, and cowardly boy. Nobody said anything to me because, in primary school, it was 'normal' for a kid to exhibit those behaviors. Then, when I started high school, things worsened. The only thing I was doing with my life was playing video games and watching videos on my computer. Nothing productive."],
       ["p", "My body weakened with each passing day until I reached a dark phase, and I began to change..."],
@@ -62,11 +101,5 @@
       ["p", "Am I satisfied with where I am now? I'll be honest: I'm grateful for the progress I've made, but I haven't yet reached my ultimate destination. I have countless plans and aspirations that drive me each morning, imagining the bright future that awaits me."],
       ["p", "I hope you, too, find your purpose and motivation to face each day with enthusiasm. Remember, if life treats you poorly, it's up to YOU to initiate change. While circumstances play a role, it's your determination and hard work that ultimately propel you forward. Without them, you'll remain stagnant."]
     ]
-  },
-  "2": {
-    "maintitle": "My experience in high school",
-    "description": "Best or worst years? Is the education system beneficial?",
-    "image": "me5.jpg",
-    "content": []
   }
 }
