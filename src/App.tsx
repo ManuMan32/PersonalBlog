@@ -6,7 +6,7 @@ import { useState } from "react"
 import { GlobalContext } from './globalContext'
 
 function App() {
-  const [ currentArticle, setCurrentArticle ] = useState<number>(1);
+  const [ currentArticle, setCurrentArticle ] = useState<number>(0);
   return (
     <div id='app'>
       <GlobalContext.Provider value={{
