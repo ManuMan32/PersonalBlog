@@ -14,6 +14,7 @@ const Article: React.FC<Props> = ({ components, isLoading }) => {
       case "subtitle": return <Subtitle key={uniqKey}>{content as string}</Subtitle>
       case "p": return <p key={uniqKey}>{content}</p>
       case "imgleft": return <FloatImg key={uniqKey} direction="left" imgSrc={content as string} />
+      case "imgright": return <FloatImg key={uniqKey} direction="right" imgSrc={content as string} />
       case "galery": return <Galery images={content as string[]} height="300px"/>
       default: return <span key={uniqKey} style={{ color: "red", display: "block" }}>_Error loading the article content_</span>
     }
