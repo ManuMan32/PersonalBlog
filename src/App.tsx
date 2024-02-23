@@ -6,6 +6,7 @@ import { useState, useEffect } from "react"
 import { GlobalContext } from './globalContext'
 import MainPage from './components/mainpage/MainPage'
 import { ArticleType } from './model'
+import { Route, Routes } from 'react-router-dom'
 
 let articles: ArticleType[] = [];
 function App() {
@@ -49,8 +50,10 @@ function App() {
         currentArticleObject
       }}>
         <Nav />
-        {(currentRoute == "main") ? <MainPage />
-          : <MainContent />}
+        <Routes>
+          <Route path='/' element={ <MainPage /> } />
+          <Route path='/article/:articleId' element={ <MainContent /> } />
+        </Routes>
         <Footer />
       </GlobalContext.Provider>
     </div>

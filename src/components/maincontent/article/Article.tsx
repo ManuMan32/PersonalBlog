@@ -1,13 +1,15 @@
+import { useGlobalContext } from "../../../globalContext";
 import "./Article.css";
 import FloatImg from "./floatimg/FloatImg";
 import Galery from "./galery/Galery";
 import Subtitle from "./subtitle/Subtitle";
 import Title from "./title/Title";
 interface Props {
-  components: string[][]
+  target: number
   isLoading: boolean
 }
-const Article: React.FC<Props> = ({ components, isLoading }) => {
+const Article: React.FC<Props> = ({ target, isLoading }) => {
+  const { articles } = useGlobalContext();
   function returnElement(key: string, content: string | string[], uniqKey: number): JSX.Element {
     switch (key) {
       case "title": return <Title key={uniqKey}>{content as string}</Title>
@@ -24,6 +26,7 @@ const Article: React.FC<Props> = ({ components, isLoading }) => {
       Loading...
     </article>
   )
+  const components = articles[target].content;
   return (
     <article className="article">
       {components.map((comp, i) => returnElement(comp[0], comp[1], i) )}

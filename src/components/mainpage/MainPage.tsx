@@ -33,9 +33,9 @@ const MainPage: React.FC = () => {
           </article>
         </div>
       </main>
-      <ArticlePreview articleObject={articles[0]} />
-      <ArticlePreview articleObject={articles[1]} />
-      <ArticlePreview articleObject={articles[2]} />
+      <ArticlePreview articleObject={articles[0]} target={0} />
+      <ArticlePreview articleObject={articles[1]} target={1} />
+      <ArticlePreview articleObject={articles[2]} target={2} />
     </>
   )
 }
