@@ -3,8 +3,9 @@ import { useEffect, useRef } from "react";
 interface Props {
   title: string
   isLoading: boolean
+  type: "main" | "article"
 }
-const MainTitle: React.FC<Props> = ({ title, isLoading }) => {
+const MainTitle: React.FC<Props> = ({ title, isLoading, type }) => {
   const titleArray = title.split("");
   titleArray.unshift("<");
   titleArray.push(">");
@@ -28,7 +29,7 @@ const MainTitle: React.FC<Props> = ({ title, isLoading }) => {
   )
   return (
     <div className="mainTitle">
-      <div className="mainTitleLetters">
+      <div className="mainTitleLetters" style={{ fontSize: ((type == "main") ? "70px" : "45px") }}>
         {titleArray.map((letter, i) => {
           return <span
             className={(letter == " ") ? "mainTitleLetters_Space" : "mainTitleLetters_Letter"}

@@ -4,7 +4,6 @@ interface Props {
   articleObject: ArticleType
 }
 const ArticlePreview: React.FC<Props> = ({ articleObject }) => {
-  console.log(articleObject);
   return (
     <div className="articlePreview">
       <div className="articlePreviewImg">

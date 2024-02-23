@@ -18,9 +18,9 @@ const MainContent: React.FC = () => {
     ]
   };
   const { currentArticle } = useGlobalContext();
-  const [ mainTitle, setMainTitle ] = useState<string>("Blog title");
-  const [ components, setComponents ] = useState<string[][]>(artObject.content);
-  const [ isLoading, setIsLoading ] = useState<boolean>(true);
+  const [mainTitle, setMainTitle] = useState<string>("Blog title");
+  const [components, setComponents] = useState<string[][]>(artObject.content);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
   useEffect(() => {
     const fetchData = async (currentArticle: number): Promise<void> => {
       try {
@@ -41,7 +41,7 @@ const MainContent: React.FC = () => {
   if (isLoading) {
     return (
       <main className="main">
-        <MainTitle title={mainTitle} isLoading={isLoading} />
+        <MainTitle title={mainTitle} isLoading={isLoading} type="article" />
         <div className="mainContent">
           <Article components={components} isLoading={isLoading} />
           <Aside />
@@ -49,11 +49,10 @@ const MainContent: React.FC = () => {
       </main>
     )
   }
-  else console.log(articles)
   return (
     <>
       <main className="main">
-        <MainTitle title={mainTitle} isLoading={isLoading} />
+        <MainTitle title={mainTitle} isLoading={isLoading} type="article" />
         <div className="mainContent">
           <Article components={components} isLoading={isLoading} />
           <Aside />
