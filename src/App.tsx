@@ -18,7 +18,7 @@ function App() {
     ]
   }
   const [currentArticle, setCurrentArticle] = useState<number>(0);
-  const [currentRoute, setCurrentRoute] = useState<string>("article");
+  const [currentRoute, setCurrentRoute] = useState<string>("main");
   const [currentArticleObject, setCurrentArticleObj] = useState<ArticleType>(defaultArticleObject);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   useEffect(() => {

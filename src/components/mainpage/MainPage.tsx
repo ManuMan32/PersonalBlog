@@ -4,7 +4,21 @@ import Subtitle from "../maincontent/article/subtitle/Subtitle";
 import Galery from "../maincontent/article/galery/Galery";
 import MainTitle from "../maincontent/maintitle/MainTitle";
 import ArticlePreview from "../articlepreview/ArticlePreview";
+import { useGlobalContext } from "../../globalContext";
 const MainPage: React.FC = () => {
+  const { articles, isLoading } = useGlobalContext();
+  if (isLoading) {
+    return (
+      <>
+        <MainTitle title="Manu's Blog" isLoading={true} type="main"/>
+        <div className="mainContent">
+          <article className="mainPage">
+            <Title>Loading...</Title>
+          </article>
+        </div>
+      </>
+    )
+  }
   return (
     <>
       <main className="main">
@@ -19,6 +33,9 @@ const MainPage: React.FC = () => {
           </article>
         </div>
       </main>
+      <ArticlePreview articleObject={articles[0]} />
+      <ArticlePreview articleObject={articles[1]} />
+      <ArticlePreview articleObject={articles[2]} />
     </>
   )
 }
