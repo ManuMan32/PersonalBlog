@@ -1,7 +1,7 @@
 .mainPage {
   flex: 1;
-  margin: 0 40px;
-  padding: 20px;
+  margin: 0 50px;
+  padding: 40px;
   background-color: var(--ui1);
   font-size: 24px;
   line-height: 36px;
@@ -10,4 +10,9 @@
 .mainPage .subtitle {
   text-align: center;
   margin: 70px 0;
+  text-indent: 0;
+}
+.mainPage p {
+  text-indent: 0;
+  text-align: center;
 }

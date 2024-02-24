@@ -35,7 +35,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px 40px 20px 0;
+  padding: 20px 15px 20px 0;
 }
 .articlePreview_title {
   display: block;
@@ -44,9 +44,9 @@
   font-weight: bold;
 }
 .articlePreview_description {
-  padding: 10px;
   font-size: 18px;
   opacity: 0.5;
   font-family: 'Rubik';
   text-align: center;
+  text-indent: 0;
 }
