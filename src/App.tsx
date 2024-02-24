@@ -7,6 +7,7 @@ import { GlobalContext } from './globalContext'
 import MainPage from './components/mainpage/MainPage'
 import { ArticleType } from './model'
 import { Route, Routes } from 'react-router-dom'
+import Articles from './components/articles/Articles'
 
 let articles: ArticleType[] = [];
 function App() {
@@ -52,6 +53,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path='/' element={ <MainPage /> } />
+          <Route path='/articles' element={ <Articles /> } />
           <Route path='/article/:articleId' element={ <MainContent /> } />
         </Routes>
         <Footer />

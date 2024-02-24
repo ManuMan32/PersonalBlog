@@ -1,0 +1,10 @@
+.articles {
+  display: grid;
+  grid-template: 200px / 1fr 1fr;
+  grid-auto-rows: 200px;
+  gap: 30px;
+  margin: 30px;
+}
+.articles .articlePreview {
+  margin: 10px;
+}
