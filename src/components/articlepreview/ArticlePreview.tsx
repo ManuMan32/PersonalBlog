@@ -7,19 +7,21 @@ interface Props {
 }
 const ArticlePreview: React.FC<Props> = ({ articleObject, target }) => {
   return (
-    <Link to={"/article/"+target.toString()}>
-      <div className="articlePreview">
-        <div className="articlePreviewImg">
-          <img src={articleObject.image} alt={articleObject.image} />
+    <div className="articlePreview">
+      <Link to={"/article/"+target.toString()}>
+        <div className="articlePreviewContainer">
+          <div className="articlePreviewImg">
+            <img src={articleObject.image} alt={articleObject.image} />
+          </div>
+          <div className="articlePreviewContent">
+            <span className="articlePreview_title">{articleObject.maintitle}</span>
+            <p className="articlePreview_description">
+              {articleObject.description}
+            </p>
+          </div>
         </div>
-        <div className="articlePreviewContent">
-          <span className="articlePreview_title">{articleObject.maintitle}</span>
-          <p className="articlePreview_description">
-            {articleObject.description}
-          </p>
-        </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   )
 }
 export default ArticlePreview;

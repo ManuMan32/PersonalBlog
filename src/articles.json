@@ -1,7 +1,7 @@
 {
   "0": {
     "maintitle": "The start of my coding journey",
-    "description": "The world of programming is too immense for a 12-year-old boy, isn't it?",
+    "description": "The world of programming is too immense for a 12-year-old boy, isn't it? How I learned about game development and started creating my own communities.",
     "image": "code1.jpeg",
     "content": [
       ["title", "My beginnings in programming"],
@@ -28,7 +28,7 @@
   },
   "1": {
     "maintitle": "Social Media in young people",
-    "description": "How they affect behavior, according to my point of view living it day by day.",
+    "description": "How do they work? Why are they so important for young people? How they affect behavior? All of this is answered with my experience living them day by day.",
     "image": "friends1.jpeg",
     "content": [
       ["title", "The generation of instant gratification."],
@@ -64,7 +64,7 @@
   },
   "2": {
     "maintitle": "My experience in high school",
-    "description": "Best or worst years? Is the education system beneficial?",
+    "description": "Best or worst years? Is the education system beneficial? Are grades important? Be surprised by the point of view of young people today.",
     "image": "me5.jpg",
     "content": [
       ["title", "Best or worst years?"],
