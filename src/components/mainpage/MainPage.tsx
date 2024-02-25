@@ -10,7 +10,7 @@ const MainPage: React.FC = () => {
   if (isLoading) {
     return (
       <>
-        <MainTitle title="Manu's Blog" isLoading={true} type="main"/>
+        <MainTitle isLoading={true} type="main"/>
         <div className="mainContent">
           <article className="mainPage">
             <Title>Loading...</Title>
@@ -19,11 +19,10 @@ const MainPage: React.FC = () => {
       </>
     )
   }
-  console.log("puta")
   return (
     <>
       <main className="main">
-        <MainTitle title="Manu's Blog" isLoading={false} type="main"/>
+        <MainTitle isLoading={false} type="main"/>
         <div className="mainContent">
           <article className="mainPage">
             <Title>Welcome!</Title>

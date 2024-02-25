@@ -1,11 +1,16 @@
+import { useParams } from "react-router-dom";
+import { useGlobalContext } from "../../../globalContext";
 import "./MainTitle.css";
 import { useEffect, useRef } from "react";
 interface Props {
-  title: string
   isLoading: boolean
   type: "main" | "article"
 }
-const MainTitle: React.FC<Props> = ({ title, isLoading, type }) => {
+const MainTitle: React.FC<Props> = ({ isLoading, type }) => {
+  const { articleId } = useParams<{ articleId: string }>();
+  const { articles } = useGlobalContext();
+  const index: number = parseInt(articleId!);
+  const title = articles[index].maintitle;
   const titleArray = title.split("");
   titleArray.unshift("<");
   titleArray.push(">");
@@ -19,7 +24,7 @@ const MainTitle: React.FC<Props> = ({ title, isLoading, type }) => {
       })
     }, 3000);
     return (() => clearInterval(effectIntervalRef.current));
-  }, [title])
+  }, [])
   if (isLoading) return (
     <div className="mainTitle">
       <div className="mainTitleLetters">
@@ -30,13 +35,14 @@ const MainTitle: React.FC<Props> = ({ title, isLoading, type }) => {
   return (
     <div className="mainTitle">
       <div className="mainTitleLetters" style={{ fontSize: ((type == "main") ? "70px" : "45px") }}>
-        {titleArray.map((letter, i) => {
-          return <span
-            className={(letter == " ") ? "mainTitleLetters_Space" : "mainTitleLetters_Letter"}
-            key={i}>
-            {letter}
-          </span>
-        })}
+        {(type == "main") ? "Manu's Blog"
+          : (titleArray.map((letter, i) => {
+            return <span
+              className={(letter == " ") ? "mainTitleLetters_Space" : "mainTitleLetters_Letter"}
+              key={i}>
+              {letter}
+            </span>
+          }))}
       </div>
     </div>
   )

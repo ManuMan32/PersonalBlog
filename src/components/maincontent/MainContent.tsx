@@ -7,11 +7,11 @@ import { useGlobalContext } from "../../globalContext";
 import { useParams } from "react-router-dom";
 const MainContent: React.FC = () => {
   const { articleId } = useParams<{ articleId: string }>();
-  const { isLoading, articles, currentArticleObject } = useGlobalContext();
+  const { isLoading, articles } = useGlobalContext();
   if (isLoading) {
     return (
       <main className="main">
-        <MainTitle title={currentArticleObject.maintitle} isLoading={isLoading} type="article" />
+        <MainTitle isLoading={isLoading} type="article" />
         <div className="mainContent">
           <Article target={parseInt(articleId!)} isLoading={isLoading} />
           <Aside />
@@ -22,7 +22,7 @@ const MainContent: React.FC = () => {
   return (
     <>
       <main className="main">
-        <MainTitle title={currentArticleObject.maintitle} isLoading={isLoading} type="article" />
+        <MainTitle isLoading={isLoading} type="article" />
         <div className="mainContent">
           <Article target={parseInt(articleId!)} isLoading={isLoading} />
           <Aside />
