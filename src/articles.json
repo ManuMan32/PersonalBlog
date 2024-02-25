@@ -58,7 +58,7 @@
       ["galery", ["/tiktok.jpg"]],
       ["subtitle", "WhatsApp"],
       ["p", "There are two types of young people: The mysterious ones who have their last seen and online status deactivated, in addition to having the option to delete messages that have been in the chat history for a long time. And then there are those who don't change any settings, the 'paranoid' ones who look at the last time someone logged in and draw conclusions from it."],
-      ["p", "------"],
+      ["divider", "-"],
       ["p", "In conclusion, social networks are a medium that defines the behavior and image of young people today. If you are older, you may not fully understand the reason for this, but as a 17-year-old boy who lives in the digital generation, the experiences are very real, and many times parents are not present in their children's lives to explain what is wrong and what is right to do on the Internet."]
     ]
   },
@@ -108,7 +108,6 @@
       ["p", "They manipulated me in a lot of ways. I won't go into detail about all the situations because I don't want to relive that year. In addition to the tough high school experience, my family noticed that I was becoming weaker and neglecting my physical appearance, causing them to lose their respect for me."],
       ["p", "And what did I do during my days? The same as the previous year: playing video games, listening to music, and doing absolutely nothing productive. I couldn't comprehend that all my suffering was due to my lifestyle, not just unlucky circumstances."],
       ["p", "By the end of the year, I was alone, weak, without family support, and no one was there to save me. November 2021 was the closest I had ever been to my breaking point, but then in December... things changed."],
-      [],
       ["p", "While watching YouTube videos, I stumbled upon a specific and intriguing topic called 'self-improvement'. My family had always dismissed such content as stupid (yet ironically, they had never actually watched any of it). Initially, I rejected the idea, but my self-loathing was so intense that I forced myself to give it a chance."],
       ["p", "In those videos, I encountered some of the toughest lessons I had ever heard in December 2021: YOU are the only one responsible for your suffering, if people mistreat you, it's because they don't respect you, if you constantly complain, things won't change, pain equals change, and so on."],
       ["p", "It was then that I realized I had control over my life, and although it seemed impossible, I could change it."],
@@ -117,6 +116,7 @@
       ["p", "I began applying those principles, and my life started changing drastically. It was tough for a 15-year-old boy to come to terms with his perceived ugliness, and even tougher when people mocked his efforts to change. But what mattered most was that I never gave up."],
       ["p", "One of the most significant events of the year occurred in August-September when I experienced my first existential crisis. I questioned my daily struggle for improvement: What's the point? Why continue living and working when I'm just an insignificant person? Despite this crisis, I refused to give up. Instead, I delved into life philosophy, contemplating these existential questions, essential for future growth."],
       ["p", "It was a year filled with suffering, discipline, false friendships, shame, and self-hatred. I didn't start seeing results until the final months of the year, but what transpired next was nothing short of incredible to me."],
+      ["galery", ["/me6.jpeg"]],
       ["subtitle", "2023:"],
       ["p", "Not the best year of my life, but it was the one in which I made the most progress. I discovered the benefits of regular exercise, learned how to cultivate genuine friendships, took up volleyball, and expanded my social circle. It was also the year I began learning web development and created my Twitter account."],
       ["p", "Most importantly: I found my personal style. Embracing messy hair and sports clothes made me feel more confident and attractive."],
@@ -140,7 +140,7 @@
       ["galery", ["/mario1.jpg", "/mario2.jpg"]],
       ["galery", ["/mario3.jpg", "/mario4.jpg"]],
       ["p", "Playing it was horrible. It had bugs that, since I didn't know how to solve them, I shamelessly left them in the final version. I showed this game in my \"Life Vision\", a presentation that sixth-grade students do as their final project. My teachers were impressed (they didn't know anything about game development so they didn't realize how horrible it was lol). From that moment, I knew I wanted to be a programmer. I didn't continue learning for reasons mentioned in this article."],
-      ["p", "------"],
+      ["link", ["/article/3", "The worst year of my life (The weak boy becoming the most confident of his class)"]],
       ["p", "There were several small fangames of Zelda, Counter Strike, Geometry Dash, and Metroid, which I never finished because I was young and I simply programmed what I wanted at that moment; I was not consistent with the projects."],
       ["p", "But when I turned 13, I started the project that would change my perspective on programming: Jumping World."],
       ["p", "It was 2020, and I used Discord a lot. There I met a friend who, by chance, also knew how to develop games with Game Maker. I showed him one of my Fangames, and since we were both bored in the middle of a pandemic, we decided to improve it and make it our own game."],
@@ -150,7 +150,7 @@
       ["galery", ["/jw1.jpg", "/jw2.jpg"]],
       ["galery", ["/jw3.jpg", "/jw4.jpg"]],
       ["p", "A few months ago, in December 2023, my friend and I decided to remaster the game. We didn't spend much time on it since he's busy with his studies and I have been prioritizing other projects more, but I'm sure that one day we will finish the remaster and revive the community. This is a video that we shared as a preview:"],
-      ["video", "mierda de día"]
+      ["link", ["https://www.youtube.com/watch?v=GmSoohtjAng", "Jumping World 1-1 Showcase"]]
     ]
   },
   "5": {
@@ -167,7 +167,7 @@
       ["imgleft", "/twitter2.jpg"],
       ["p", "That's when I saw several posts of people doing a challenge called \"100 days of code\". This type of posts caught my attention a lot. At first, I didn't know if they followed a set path or if they had mentors telling them what to do, but upon further investigation, I realized that it was simply like a diary of your daily learning."],
       ["p", "Without hesitation, I joined the challenge. At that time, I was learning the last topics of my first JavaScript course, and today, as I write this article (February 22, 2024), I'm on day 122. It's incredible the amount of things I've learned, the people I've known, the projects I've created, and the support I've received throughout this adventure. It was something I never imagined would end this way."],
-      ["imgright", "twitter3.jpg"],
+      ["imgright", "/twitter3.jpg"],
       ["p", "And that has been my strategy from October 2023 to February 2024: 100 days of code, daily posts, and comments on other people tweets. I've tried different things such as threads, retweets, and quotes, but none of them have been as effective. I simply saw what worked for me, I was consistent, and I built my community."],
       ["subtitle", "What would you recommend to a person who is starting out in X?"],
       ["p", "1- Start: It may sound trivial, but just begin posting and engaging with the platform. You'll learn from your mistakes as you go along."],

@@ -1,5 +1,6 @@
 import { useGlobalContext } from "../../../globalContext";
 import "./Article.css";
+import Divider from "./divider/Divider";
 import FloatImg from "./floatimg/FloatImg";
 import Galery from "./galery/Galery";
 import Subtitle from "./subtitle/Subtitle";
@@ -18,6 +19,8 @@ const Article: React.FC<Props> = ({ target, isLoading }) => {
       case "imgleft": return <FloatImg key={uniqKey} direction="left" imgSrc={content as string} />
       case "imgright": return <FloatImg key={uniqKey} direction="right" imgSrc={content as string} />
       case "galery": return <Galery images={content as string[]} height="300px"/>
+      case "divider": return <Divider />
+      case "link": return <a className="linkArticle" href={content[0]}>{content[1]}</a>
       default: return <span key={uniqKey} style={{ color: "red", display: "block" }}>_Error loading the article content_</span>
     }
   }
