@@ -92,8 +92,8 @@
   },
   "3": {
     "maintitle": "The worst year of my life",
-    "description": "The weak boy becoming the most confident of his class.",
-    "image": "/friends1.jpeg",
+    "description": "The weak boy becoming the most confident of his class. My hard maturation process.",
+    "image": "/me4.jpeg",
     "content": [
       ["title", "The most difficult stage of my life"],
       ["p", "I was a weak, annoying, and cowardly boy. Nobody said anything to me because, in primary school, it was 'normal' for a kid to exhibit those behaviors. Then, when I started high school, things worsened. The only thing I was doing with my life was playing video games and watching videos on my computer. Nothing productive."],
@@ -131,8 +131,8 @@
   },
   "4": {
     "maintitle": "My first games",
-    "description": "From Fangames to entire communities.",
-    "image": "/testimg1.jpg",
+    "description": "From Fangames to entire communities. How horrible were my first creations?",
+    "image": "/jw4.jpg",
     "content": [
       ["title", "My journey in game development"],
       ["p", "When I was 13 years old and I started programming in Game Maker (if you want to know more about this, read the article on the right side), the only thing I did was fangames of games that I liked. I loved a page called \"The Spriters Resource\", which contained images of any game you could think of."],
@@ -156,7 +156,7 @@
   "5": {
     "maintitle": "My X journey",
     "description": "How I started and how I managed to reach where I am.",
-    "image": "/testimg2.jpg",
+    "image": "/twitter1.jpg",
     "content": [
       ["title", "Starting in my favorite social media right now"],
       ["p", "While learning JavaScript around September 2023, I decided to create a YouTube channel to showcase my first project. It was a fairly simple memory game, but one I was very proud of as my first \"big\" project. My initial plan was just to share my work on YouTube, but my father, who knows more about the world of programming than I do, recommended that I create a Twitter account and share my work there."],

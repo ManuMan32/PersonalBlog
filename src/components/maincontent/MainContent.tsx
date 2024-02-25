@@ -5,7 +5,6 @@ import Aside from "./aside/Aside";
 import MainTitle from "./maintitle/MainTitle";
 import { useGlobalContext } from "../../globalContext";
 import { useParams } from "react-router-dom";
-
 const MainContent: React.FC = () => {
   const { articleId } = useParams<{ articleId: string }>();
   const { isLoading, articles, currentArticleObject } = useGlobalContext();

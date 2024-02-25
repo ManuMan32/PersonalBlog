@@ -4,11 +4,12 @@ import "./ArticlePreview.css";
 interface Props {
   articleObject: ArticleType
   target: number
+  big?: boolean
 }
-const ArticlePreview: React.FC<Props> = ({ articleObject, target }) => {
+const ArticlePreview: React.FC<Props> = ({ articleObject, target, big = false }) => {
   return (
-    <div className="articlePreview">
-      <Link to={"/article/"+target.toString()}>
+    <div className={"articlePreview" + ((big) ? " articlePreviewBig" : "")}>
+      <Link to={"/article/" + target.toString()} >
         <div className="articlePreviewContainer">
           <div className="articlePreviewImg">
             <img src={articleObject.image} alt={articleObject.image} />

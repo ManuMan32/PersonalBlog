@@ -8,3 +8,11 @@
 .articles .articlePreview {
   margin: 10px;
 }
+.articles .articlePreviewBig {
+  grid-row: span 2;
+  height: 100%;
+}
+.articles .articlePreview_title { font-size: 36px; }
+.articles .articlePreview_description { font-size: 14px; }
+.articles .articlePreviewBig .articlePreview_title { font-size: 50px; }
+.articles .articlePreviewBig .articlePreview_description { font-size: 20px; }

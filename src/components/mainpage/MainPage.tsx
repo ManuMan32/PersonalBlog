@@ -19,6 +19,7 @@ const MainPage: React.FC = () => {
       </>
     )
   }
+  console.log("puta")
   return (
     <>
       <main className="main">
