@@ -9,8 +9,11 @@ interface Props {
 const MainTitle: React.FC<Props> = ({ isLoading, type }) => {
   const { articleId } = useParams<{ articleId: string }>();
   const { articles } = useGlobalContext();
-  const index: number = parseInt(articleId!);
-  const title = articles[index].maintitle;
+  let title = "Loading";
+  if (!isLoading) {
+    const index: number = parseInt(articleId!);
+    title = articles[index].maintitle;
+  }
   const titleArray = title.split("");
   titleArray.unshift("<");
   titleArray.push(">");
