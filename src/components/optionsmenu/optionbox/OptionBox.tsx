@@ -1,6 +1,5 @@
 import { useGlobalContext } from "../../../globalContext";
 import "./OptionBox.css";
-import { useState } from 'react';
 interface Props {
   title: string
   options: string[]
@@ -8,17 +7,16 @@ interface Props {
 }
 const OptionBox: React.FC<Props> = ({ title, options, optionsFunction }) => {
   // Possible options
-  const { theme } = useGlobalContext();
-  const [checked, setChecked] = useState<number>(0);
-  function handleCheck(val: number) {
-    setChecked(val);
-  }
+  const { theme, animations, background } = useGlobalContext();
   function handleCheckChecked(index: number): boolean {
+    let value;
     switch (title) {
-      case "Theme": const value = (theme == "dark") ? 0 : 1;
-        return (value == index);
+      case "Theme": value = (theme == "dark") ? 0 : 1; break;
+      case "Animations": value = (animations) ? 0 : 1; break;
+      case "Background": value = (background) ? 0 : 1; break;
       default: return false;
     }
+    return (value == index);
   }
   return (
     <div className="option">
@@ -29,10 +27,7 @@ const OptionBox: React.FC<Props> = ({ title, options, optionsFunction }) => {
             <span className="optionBoxTitle">{option}</span>
             <div
               className={"optionBoxCheck" + ((handleCheckChecked(index)) ? " checked" : "")}
-              onClick={() => {
-                handleCheck(index);
-                optionsFunction[index]();
-              }}></div>
+              onClick={() => optionsFunction[index]() }></div>
           </div>
         })}
       </div>

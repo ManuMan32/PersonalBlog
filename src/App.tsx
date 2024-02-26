@@ -29,6 +29,8 @@ function App() {
   const [scrolleable, setScrolleable] = useState<boolean>(true); // Used for options modal
   // User options
   const [theme, setTheme] = useState<Theme>("dark");
+  const [animations, setAnimations] = useState<boolean>(true);
+  const [background, setBackground] = useState<boolean>(true);
   function handleChangeTheme(newTheme: Theme) {
     const root = document.documentElement;
     if (newTheme == "dark") {
@@ -79,7 +81,11 @@ function App() {
         setScrolleable,
         setOptionsShown,
         theme,
-        handleChangeTheme
+        handleChangeTheme,
+        animations,
+        setAnimations,
+        background,
+        setBackground
       }}>
         <Nav />
         <Routes>

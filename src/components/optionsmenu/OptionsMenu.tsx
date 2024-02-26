@@ -2,7 +2,7 @@ import { useGlobalContext } from "../../globalContext";
 import "./OptionsMenu.css";
 import OptionBox from "./optionbox/OptionBox";
 const OptionsMenu: React.FC = () => {
-  const { setScrolleable, setOptionsShown, handleChangeTheme } = useGlobalContext();
+  const { setScrolleable, setOptionsShown, handleChangeTheme, setAnimations, setBackground } = useGlobalContext();
   function handleCloseButton() {
     setScrolleable(true);
     setOptionsShown(false);
@@ -16,8 +16,14 @@ const OptionsMenu: React.FC = () => {
           title="Theme"
           options={["Dark", "Light"]}
           optionsFunction={[() => handleChangeTheme("dark"), () => handleChangeTheme("light")]} />
-        <OptionBox title="Animations" options={["True", "False"]} optionsFunction={[() => void 0]} />
-        <OptionBox title="Background" options={["True", "False"]} optionsFunction={[() => void 0]} />
+        <OptionBox
+          title="Animations"
+          options={["True", "False"]}
+          optionsFunction={[() => setAnimations(true), () => setAnimations(false)]} />
+        <OptionBox
+          title="Background"
+          options={["True", "False"]}
+          optionsFunction={[() => setBackground(true), () => setBackground(false)]} />
       </div>
     </div>
   )

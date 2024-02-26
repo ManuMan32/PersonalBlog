@@ -13,6 +13,10 @@ export interface GlobalContextType {
   setScrolleable: (_ : boolean) => void
   theme: Theme
   handleChangeTheme: (_ : Theme) => void
+  animations: boolean
+  setAnimations: (_ : boolean) => void
+  background: boolean
+  setBackground: (_ : boolean) => void
 }
 export const GlobalContext = createContext<GlobalContextType>({
   currentArticle: 0,
@@ -33,6 +37,10 @@ export const GlobalContext = createContext<GlobalContextType>({
   setOptionsShown: (_: boolean) => { },
   setScrolleable: (_: boolean) => { },
   theme: "dark",
-  handleChangeTheme: (_: Theme) => { }
+  handleChangeTheme: (_: Theme) => { },
+  animations: true,
+  setAnimations: (_: boolean) => { },
+  background: true,
+  setBackground: (_: boolean) => { }
 })
 export const useGlobalContext = () => useContext(GlobalContext)
