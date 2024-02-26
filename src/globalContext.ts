@@ -1,5 +1,5 @@
 import { createContext, useContext } from "react"
-import { ArticleType } from "./model"
+import { ArticleType, Theme } from "./model"
 export interface GlobalContextType {
   currentArticle: number
   setCurrentArticle: (_ : number) => void
@@ -11,6 +11,8 @@ export interface GlobalContextType {
   currentArticleObject: ArticleType
   setOptionsShown: (_ : boolean) => void
   setScrolleable: (_ : boolean) => void
+  theme: Theme
+  handleChangeTheme: (_ : Theme) => void
 }
 export const GlobalContext = createContext<GlobalContextType>({
   currentArticle: 0,
@@ -29,6 +31,8 @@ export const GlobalContext = createContext<GlobalContextType>({
     ]
   },
   setOptionsShown: (_: boolean) => { },
-  setScrolleable: (_: boolean) => { }
+  setScrolleable: (_: boolean) => { },
+  theme: "dark",
+  handleChangeTheme: (_: Theme) => { }
 })
 export const useGlobalContext = () => useContext(GlobalContext)

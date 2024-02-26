@@ -4,3 +4,4 @@ export interface ArticleType {
   image: string
   content: string[][]
 }
+export type Theme = "dark" | "light"
