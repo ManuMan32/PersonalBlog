@@ -9,6 +9,8 @@ export interface GlobalContextType {
   isLoading: boolean,
   setIsLoading: (_ : boolean) => void
   currentArticleObject: ArticleType
+  setOptionsShown: (_ : boolean) => void
+  setScrolleable: (_ : boolean) => void
 }
 export const GlobalContext = createContext<GlobalContextType>({
   currentArticle: 0,
@@ -25,6 +27,8 @@ export const GlobalContext = createContext<GlobalContextType>({
     content: [
       ["p", "See the browser's console for more information."]
     ]
-  }
+  },
+  setOptionsShown: (_: boolean) => { },
+  setScrolleable: (_: boolean) => { }
 })
 export const useGlobalContext = () => useContext(GlobalContext)

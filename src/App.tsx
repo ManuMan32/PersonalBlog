@@ -8,6 +8,7 @@ import MainPage from './components/mainpage/MainPage'
 import { ArticleType } from './model'
 import { Route, Routes } from 'react-router-dom'
 import Articles from './components/articles/Articles'
+import OptionsMenu from './components/optionsmenu/OptionsMenu'
 
 let articles: ArticleType[] = [];
 function App() {
@@ -23,6 +24,8 @@ function App() {
   const [currentRoute, setCurrentRoute] = useState<string>("main");
   const [currentArticleObject, setCurrentArticleObj] = useState<ArticleType>(defaultArticleObject);
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [optionsShown, setOptionsShown] = useState<boolean>(false);
+  const [scrolleable, setScrolleable] = useState<boolean>(true); // Used for options modal
   useEffect(() => {
     const fetchData = async (currentArticle: number): Promise<void> => {
       try {
@@ -39,7 +42,9 @@ function App() {
     fetchData(currentArticle);
   }, [])
   return (
-    <div id='app'>
+    <div id='app' style={{
+      overflow: (scrolleable) ? "auto" : "hidden"
+    }}>
       <GlobalContext.Provider value={{
         currentArticle,
         setCurrentArticle,
@@ -48,7 +53,9 @@ function App() {
         articles,
         isLoading,
         setIsLoading,
-        currentArticleObject
+        currentArticleObject,
+        setScrolleable,
+        setOptionsShown
       }}>
         <Nav />
         <Routes>
@@ -57,6 +64,7 @@ function App() {
           <Route path='/article/:articleId' element={ <MainContent /> } />
         </Routes>
         <Footer />
+        {optionsShown && <OptionsMenu />}
       </GlobalContext.Provider>
     </div>
   )

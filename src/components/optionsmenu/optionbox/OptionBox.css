@@ -1,0 +1,42 @@
+.option {
+  flex: 6;
+  display: flex;
+  border-top: 2px solid #666;
+}
+.optionTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  font-size: 24px;
+  border-right: 1px solid #444;
+}
+.optionsBox {
+  display: flex;
+  flex: 3;
+}
+.optionBox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.optionBoxTitle {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+.optionBoxCheck {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+.optionBoxCheck:hover {
+  cursor: pointer;
+}
+.checked {
+  background-color: #0cf6;
+}

@@ -12,7 +12,8 @@ const MainTitle: React.FC<Props> = ({ isLoading, type }) => {
   let title = "Loading";
   if (!isLoading) {
     const index: number = parseInt(articleId!);
-    title = articles[index].maintitle;
+    (isNaN(index)) ? title = "Manu's Blog"
+      : title = articles[index].maintitle;
   }
   const titleArray = title.split("");
   titleArray.unshift("<");

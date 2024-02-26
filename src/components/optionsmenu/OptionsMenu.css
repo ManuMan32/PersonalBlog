@@ -1,0 +1,47 @@
+.optionsMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000c;
+}
+.optionsMenuBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 60%;
+  height: 60%;
+  background-color: var(--ui1);
+  border-radius: 20px;
+  border: 2px solid #666;
+}
+.optionsMenuBoxTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 5;
+  text-decoration: underline;
+  font-size: 40px;
+  text-align: center;
+}
+.optionsMenuCloseButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #222;
+  border: 2px solid #666;
+  color: #fff;
+  font-size: 20px;
+}
+.optionsMenuCloseButton:hover {
+  cursor: pointer;
+  background-color: #444;
+}
