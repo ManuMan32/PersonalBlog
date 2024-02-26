@@ -37,16 +37,18 @@ function App() {
       root.style.setProperty('--ui1', '#333');
       root.style.setProperty('--ui2', '#000');
       root.style.setProperty('--ui3', '#272727');
+      root.style.setProperty('--ui4', '#141414');
       root.style.setProperty('--button-hover', '#444');
-      root.style.setProperty('--button-hover', '#555');
+      root.style.setProperty('--button-active', '#555');
       root.style.setProperty('--text-color', '#fff');
     } else {
-      root.style.setProperty('--ui1', '#eee');
-      root.style.setProperty('--ui2', '#ccc');
+      root.style.setProperty('--ui1', '#ddd');
+      root.style.setProperty('--ui2', '#fff');
       root.style.setProperty('--ui3', '#ddd');
-      root.style.setProperty('--button-hover', '#aaa');
-      root.style.setProperty('--button-hover', '#999');
-      root.style.setProperty('--text-color', '#000');
+      root.style.setProperty('--ui4', '#eaeaea');
+      root.style.setProperty('--button-hover', '#ccc');
+      root.style.setProperty('--button-active', '#aaa');
+      root.style.setProperty('--text-color', '#222');
     }
     setTheme(newTheme);
   }

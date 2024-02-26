@@ -1,7 +1,7 @@
 body {
   background-color: var(--ui2);
-  background-color: #000000;
-  background-image:  linear-gradient(#141414 3.2px, transparent 3.2px), linear-gradient(to right, #141414 3.2px, #000000 3.2px);
+  background-color: var(--ui2);
+  background-image:  linear-gradient(var(--ui4) 3.2px, transparent 3.2px), linear-gradient(to right, var(--ui4) 3.2px, var(--ui2) 3.2px);
   background-size: 64px 64px;
 }
 #root {

@@ -2,7 +2,7 @@ import { useGlobalContext } from "../../globalContext";
 import "./Nav.css";
 import { Link } from "react-router-dom";
 const Nav: React.FC = () => {
-  const { setScrolleable, setOptionsShown } = useGlobalContext();
+  const { setScrolleable, setOptionsShown, theme } = useGlobalContext();
   function handleClickOptions() {
     setScrolleable(false);
     setOptionsShown(true)
@@ -12,7 +12,7 @@ const Nav: React.FC = () => {
       <ul className="navList">
         <li className="navListElement">
           <a href="https://manuelcrocco.glitch.me/">
-            <img src="/iconM.svg" alt="M" />
+            <img src="/iconM.svg" alt="M" style={{ filter: 'invert' + ((theme == "light") ? "(100%)" : "(0%)") }}/>
           </a>
         </li>
         <li className="navListElement"><Link to="/">Home</Link></li>

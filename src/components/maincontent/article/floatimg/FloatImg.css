@@ -1,7 +1,7 @@
 .floatImg {
   width: 50%;
   display: inline;
-  border: 3px solid #fff;
+  border: 3px solid var(--text-color);
   border-radius: 10px;
   margin: 10px 20px;
 }
