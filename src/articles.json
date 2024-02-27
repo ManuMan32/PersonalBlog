@@ -36,19 +36,18 @@
     "image": "/friends1.jpeg",
     "content": [
       ["title", "The generation of instant gratification"],
-      ["p", "First, let's talk about the positie thinks."],
-      ["p", "I didn't install Instagram until I was 15. You might think that maybe that's a very good thing, but the truth is, it's not. Nowadays, your Instagram account is like your letter of introduction to new young people. Not having one is like being completely invisible."],
-      ["p", "You're reading this and you're probably thinking: What?"],
+      ["p", "First, let's talk about the things I consider positive about social media."],
+      ["p", "I didn't install Instagram until I was 15. You might think that maybe that's a very good thing, but the truth is, it's not. I was a very social person, and not being on this app made me, so to speak, invisible. Nowadays, your Instagram account is like your letter of introduction to new young people."],
       ["imgleft", "/instagram1.jpg"],
       ["p", "Let me explain. Depending on your age or location, this may sound strange, but there are people who, when they see someone attractive on the street, the first thing they do is ask for their Instagram. Do you understand the point?"],
-      ["p", "I want to start by talking about this app, which is the one I have the most experience with, to be able to show you how it can be a tool instead of a waste of time."],
+      ["p", "I want to start by talking about this app, which is the one I have the most experience with, to be able to show you how it can be a tool instead of a waste of time if it's used correctly."],
       ["p", "Since I made my account in 2022 and worried about having a good profile, I've met and talked to new people, learned a lot of things from others, and understood many current concepts. Does Instagram somehow improve your social skills as a young person? Yes, it does. As much as it may be hard to admit, this social media platform is the only one that helps you establish a good image in front of other young people."],
-      ["p", "BUT READ THIS PARAGRAPH, BEFORE MY MESSAGE IS MISINTERPRETED! I'm not saying that people who don't have Instagram or aren't active on the platform are considered friendless social failures. Each person is different and having Instagram does not make you better or worse. I'm only commenting on the meaning that young people give it. If you want to be someone who works in the shadows and doesn't want to be distracted by social things, it seems completely acceptable to me that you don't want to install this app, I'm not at all recommending that you be the same as others."],
-      ["p", "That's why I want you to read this complex and stupid world that is Instagram, in which today's young people are immersed."],
+      ["p", "But don't get me wrong, I'm not saying that people who don't have Instagram or aren't active on the platform are considered friendless social failures. Each person is different and having Instagram does not make you better or worse. I'm only commenting on the meaning that young people give it. If you want to be someone who works in the shadows and doesn't want to be distracted by social things, it seems completely acceptable to me that you don't want to install this app, I'm not at all recommending that you be the same as others."],
+      ["p", "That's why I want you to delve into this complex and, at times, immature world of Instagram, in which today's young people are immersed."],
       ["galery", ["/friends1.jpeg"]],
       ["subtitle", "Behaviours on Instagram:"],
       ["p", "The normal thing is that you upload to your Instagram story if you have done something interesting that day, and here a curious behavior comes into play: the likes on the stories. If you upload a photo at the gym showing your muscles, and a guy likes it, what does it mean? Does he think you have very good results? Does he like the photo? Does he like you? You will never know. You will have to deduce it depending on who the person is."],
-      ["p", "When you are interested in someone, the most 'normal' thing to do to get their attention and give them signs is to start following them on Instagram and occasionally like their stories. In fact, it is not uncommon for strangers to message you on your Instagram account, so I have met many people who are my friends today. This way, if you like someone, you can simply talk to them through this app and see if they engage in the conversation."],
+      ["p", "When you are interested in someone, the most \"normal\" thing to do to get their attention and give them signs is to start following them on Instagram and occasionally like their stories. In fact, it's not uncommon for strangers to message you on your Instagram account, so I have met many people who are my friends today. This way, if you like someone, you can simply talk to them through this app and see if they engage in the conversation."],
       ["imgright", "/instagram2.jpg"],
       ["p", "But of course, just because someone talks to you or likes your stories doesn't mean they like you. That's the problem with Instagram; you never know what people's intentions are."],
       ["p", "This leads to a current problem for young people: they are very paranoid when it comes to social media. They give too much importance to who sees their stories, who likes them, who talks to them, who views their account, who liked X reel, etc. I personally have already been through this, and I can say that letting yourself be manipulated by these stimuli is the most depressing feeling that exists."],
@@ -61,9 +60,9 @@
       ["p", "Studying the behavior of young people on this app would be enough for another entire article..."],
       ["galery", ["/tiktok.jpg"]],
       ["subtitle", "WhatsApp"],
-      ["p", "There are two types of young people: The mysterious ones who have their last seen and online status deactivated, in addition to having the option to delete messages that have been in the chat history for a long time. And then there are those who don't change any settings, the 'paranoid' ones who look at the last time someone logged in and draw conclusions from it."],
+      ["p", "There are two types of young people: The mysterious ones who have their last seen and online status deactivated, in addition to having the option to delete messages that have been in the chat history for a long time. And then there are those who don't change any settings, the \"paranoid\" ones who look at the last time someone was online and start overthinking about it."],
       ["divider", "-"],
-      ["p", "In conclusion, social networks are a medium that defines the behavior and image of young people today. If you are older, you may not fully understand the reason for this, but as a 17-year-old boy who lives in the digital generation, the experiences are very real, and many times parents are not present in their children's lives to explain what is wrong and what is right to do on the Internet."]
+      ["p", "In conclusion, social medias are a medium that defines the behavior and image of young people today. If you are older, you may not fully understand the reason for this, but as a 17-year-old boy who lives in the digital generation, these experiences are very real, and many times parents are not present in their children's lives to explain what is wrong and what is right to do on the Internet."]
     ]
   },
   "2": {
