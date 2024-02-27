@@ -31,13 +31,13 @@ function App() {
   const [theme, setTheme] = useState<Theme>("dark");
   const [animations, setAnimations] = useState<boolean>(true);
   const [background, setBackground] = useState<boolean>(true);
+  const root = document.documentElement;
   function handleChangeTheme(newTheme: Theme) {
-    const root = document.documentElement;
     if (newTheme == "dark") {
       root.style.setProperty('--ui1', '#333');
       root.style.setProperty('--ui2', '#000');
       root.style.setProperty('--ui3', '#272727');
-      root.style.setProperty('--ui4', '#141414');
+      root.style.setProperty('--ui4', (background) ? '#141414' : '#000');
       root.style.setProperty('--button-hover', '#444');
       root.style.setProperty('--button-active', '#555');
       root.style.setProperty('--text-color', '#fff');
@@ -45,12 +45,22 @@ function App() {
       root.style.setProperty('--ui1', '#ddd');
       root.style.setProperty('--ui2', '#fff');
       root.style.setProperty('--ui3', '#ddd');
-      root.style.setProperty('--ui4', '#eaeaea');
+      root.style.setProperty('--ui4', (background) ? '#eaeaea' : '#fff');
       root.style.setProperty('--button-hover', '#ccc');
       root.style.setProperty('--button-active', '#aaa');
       root.style.setProperty('--text-color', '#222');
     }
     setTheme(newTheme);
+  }
+  function handleDeleteBackground(newValue: boolean) {
+    if (newValue) {
+      (theme == "dark") ? root.style.setProperty('--ui4', '#000')
+        : root.style.setProperty('--ui4', '#fff');
+    } else {
+      (theme == "dark") ? root.style.setProperty('--ui4', '#141414')
+        : root.style.setProperty('--ui4', '#eaeaea');
+    }
+    setBackground(!newValue);
   }
   useEffect(() => {
     const fetchData = async (currentArticle: number): Promise<void> => {
@@ -87,13 +97,14 @@ function App() {
         animations,
         setAnimations,
         background,
-        setBackground
+        setBackground,
+        handleDeleteBackground
       }}>
         <Nav />
         <Routes>
-          <Route path='/' element={ <MainPage /> } />
-          <Route path='/articles' element={ <Articles /> } />
-          <Route path='/article/:articleId' element={ <MainContent /> } />
+          <Route path='/' element={<MainPage />} />
+          <Route path='/articles' element={<Articles />} />
+          <Route path='/article/:articleId' element={<MainContent />} />
         </Routes>
         <Footer />
         {optionsShown && <OptionsMenu />}

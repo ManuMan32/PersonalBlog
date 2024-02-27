@@ -8,7 +8,7 @@ interface Props {
 }
 const MainTitle: React.FC<Props> = ({ isLoading, type }) => {
   const { articleId } = useParams<{ articleId: string }>();
-  const { articles } = useGlobalContext();
+  const { articles, animations } = useGlobalContext();
   let title = "Loading";
   if (!isLoading) {
     const index: number = parseInt(articleId!);
@@ -19,6 +19,7 @@ const MainTitle: React.FC<Props> = ({ isLoading, type }) => {
   titleArray.unshift("<");
   titleArray.push(">");
   const effectIntervalRef = useRef<number>(0);
+  const clearAnimation = () => clearInterval(effectIntervalRef.current);
   useEffect(() => {
     effectIntervalRef.current = setInterval(() => {
       const letters: NodeListOf<HTMLElement> = document.querySelectorAll(".mainTitleLetters_Letter");
@@ -27,8 +28,11 @@ const MainTitle: React.FC<Props> = ({ isLoading, type }) => {
         setTimeout(() => letter.style.animation = `none`, 1000 + (100 * i));
       })
     }, 3000);
-    return (() => clearInterval(effectIntervalRef.current));
-  }, [])
+    if (!animations) {
+      clearAnimation();
+    }
+    return (clearAnimation);
+  }, [animations]);
   if (isLoading) return (
     <div className="mainTitle">
       <div className="mainTitleLetters">

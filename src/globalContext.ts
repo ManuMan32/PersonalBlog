@@ -17,6 +17,7 @@ export interface GlobalContextType {
   setAnimations: (_ : boolean) => void
   background: boolean
   setBackground: (_ : boolean) => void
+  handleDeleteBackground: (_ : boolean) => void
 }
 export const GlobalContext = createContext<GlobalContextType>({
   currentArticle: 0,
@@ -41,6 +42,7 @@ export const GlobalContext = createContext<GlobalContextType>({
   animations: true,
   setAnimations: (_: boolean) => { },
   background: true,
-  setBackground: (_: boolean) => { }
+  setBackground: (_: boolean) => { },
+  handleDeleteBackground: (_: boolean) => { }
 })
 export const useGlobalContext = () => useContext(GlobalContext)
