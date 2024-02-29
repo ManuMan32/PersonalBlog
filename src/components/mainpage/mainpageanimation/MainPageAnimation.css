@@ -1,0 +1,38 @@
+.mainPageAnimation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainPageAnimationBox {
+  position: relative;
+  width: 70%;
+}
+.mainPageAnimationWindowBox {
+  display: grid;
+  grid-template: repeat(3, 1fr) / 1fr;
+  grid-auto-flow: column;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+}
+.mainPageAnimationWindow {
+  width: 100%;
+  height: 100%;
+  background-color: var(--ui1);
+  justify-self: flex-start;
+}
+.mainPageAnimationImg {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+@keyframes moveDiv {
+  0% { width: 100%; justify-self: flex-start; }
+  30% { width: 0%; justify-self: flex-start; }
+  45% { width: 0%; justify-content: flex-start; }
+  55% { width: 0%; justify-self: flex-end; }
+  70% { width: 0%; justify-self: flex-end;}
+  100% { width: 100%; justify-self: flex-end; }
+}

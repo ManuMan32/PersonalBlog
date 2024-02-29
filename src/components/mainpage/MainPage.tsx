@@ -5,6 +5,7 @@ import Galery from "../maincontent/article/galery/Galery";
 import MainTitle from "../maincontent/maintitle/MainTitle";
 import ArticlePreview from "../articlepreview/ArticlePreview";
 import { useGlobalContext } from "../../globalContext";
+import MainPageAnimation from "./mainpageanimation/MainPageAnimation";
 const MainPage: React.FC = () => {
   const { articles, isLoading } = useGlobalContext();
   if (isLoading) {
@@ -28,7 +29,7 @@ const MainPage: React.FC = () => {
             <Title>Welcome!</Title>
             <Subtitle>Journey and experiences of a 17 y/o boy learning to code</Subtitle>
             <Subtitle>I share technology and self development content</Subtitle>
-            <Galery images={["friends1.jpeg", "code1.jpeg", "me6.jpeg"]} height="300px" />
+            <MainPageAnimation />
             <p>This project was made to practice my skills with React and my English (I'm a Spanish native). I hope you enjoy reading the articles!</p>
           </article>
         </div>
