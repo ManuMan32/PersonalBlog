@@ -28,9 +28,9 @@ const MainPage: React.FC = () => {
           <article className="mainPage">
             <Title>Welcome!</Title>
             <Subtitle>Journey and experiences of a 17 y/o boy learning to code</Subtitle>
-            <Subtitle>I share technology and self development content</Subtitle>
+            <Subtitle>I share technology and self improvement content</Subtitle>
             <MainPageAnimation />
-            <p>This project was made to practice my skills with React and my English (I'm a Spanish native). I hope you enjoy reading the articles!</p>
+            <p>This project was made to practice my skills with React and English (I'm a Spanish native). I hope you enjoy reading the articles!</p>
           </article>
         </div>
       </main>

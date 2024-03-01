@@ -7,9 +7,14 @@ interface Props {
   big?: boolean
 }
 const ArticlePreview: React.FC<Props> = ({ articleObject, target, big = false }) => {
+  function handleClick() {
+    console.log("puta");
+    const screen = document.getElementById("app");
+    screen?.scrollTo(0, 0);
+  }
   return (
     <div className={"articlePreview" + ((big) ? " articlePreviewBig" : "")}>
-      <Link to={"/article/" + target.toString()} >
+      <Link to={"/article/" + target.toString()} onClick={handleClick} >
         <div className="articlePreviewContainer">
           <div className="articlePreviewImg">
             <img src={articleObject.image} alt={articleObject.image} />
