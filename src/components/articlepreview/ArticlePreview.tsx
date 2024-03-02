@@ -8,7 +8,6 @@ interface Props {
 }
 const ArticlePreview: React.FC<Props> = ({ articleObject, target, big = false }) => {
   function handleClick() {
-    console.log("puta");
     const screen = document.getElementById("app");
     screen?.scrollTo(0, 0);
   }

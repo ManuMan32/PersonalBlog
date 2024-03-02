@@ -1,0 +1,36 @@
+.asideArticlePreview {
+  display: grid;
+  grid-template: 250px 50px 80px / 1fr;
+  margin: 10px;
+  border: 2px solid var(--ui4);
+  background-color: var(--ui2);
+  height: 380px;
+  margin-bottom: 100px;
+}
+.asideArticlePreviewImageBox {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px 0;
+}
+.asideArticlePreviewImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid var(--ui2);
+  border-radius: 20px;
+}
+.asideArticlePreviewTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.asideArticlePreviewDescription {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  font-size: 16px;
+}

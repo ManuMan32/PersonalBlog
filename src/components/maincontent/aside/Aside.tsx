@@ -1,8 +1,29 @@
+import { useGlobalContext } from "../../../globalContext";
+import Subtitle from "../article/subtitle/Subtitle";
 import "./Aside.css";
+import AsideArticlePreview from "./asidearticlepreview/AsideArticlePreview";
+import AsideSocialMedia from "./asidesocialmedia/AsideSocialMedia";
 const Aside: React.FC = () => {
+  const { articles, isLoading } = useGlobalContext();
+  const articlesValues = [1, 2, 3];
   return (
     <aside className="aside">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error doloremque voluptas enim provident non amet ut quibusdam itaque recusandae laudantium blanditiis atque ducimus quasi rerum nam deserunt maxime, labore facilis?
+      <Subtitle>Other articles:</Subtitle>
+      {(isLoading) ? (<span>Loading...</span>)
+        : <>
+          <AsideArticlePreview articleObj={articles[articlesValues[0]]} />
+          <AsideArticlePreview articleObj={articles[articlesValues[1]]} />
+          <AsideArticlePreview articleObj={articles[articlesValues[2]]} />
+        </>}
+      <p style={{
+        textAlign: 'center',
+        textIndent: '0',
+        opacity: '0.5'
+      }}>I'm a 17 y/o boy sharing content about code and self improvement. Studying to be a future programmer and fulfill my dreams.</p>
+      <Subtitle>Social Media:</Subtitle>
+      <AsideSocialMedia name="Twitter" image="/iconTwitter.svg" link="https://twitter.com/ManuCro32" />
+      <AsideSocialMedia name="YouTube" image="/iconYoutube.svg" link="https://www.youtube.com/channel/UCq6abTyDgfHaiMEutdbmdqw" />
+      <AsideSocialMedia name="GitHub" image="/iconGithub.svg" link="https://github.com/ManuMan32" />
     </aside>
   )
 }
