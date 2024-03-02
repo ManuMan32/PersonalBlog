@@ -16,19 +16,16 @@ const Aside: React.FC = () => {
     while (val3 == currentArticle || val3 == val1 || val3 == val2) { val3 = getValue() }
     return [val1, val2, val3];
   }
-  let articlesValues = useRef<number[]>(getRandomValues());
-  useEffect(() => {
-    articlesValues.current = getRandomValues();
-  })
+  const articlesValues = getRandomValues();
   return (
     <aside className="aside">
       <Subtitle>Other articles:</Subtitle>
       {(isLoading) ? (<span>Loading...</span>)
-        : <>
-          <AsideArticlePreview articleObj={articles[articlesValues.current[0]]} />
-          <AsideArticlePreview articleObj={articles[articlesValues.current[1]]} />
-          <AsideArticlePreview articleObj={articles[articlesValues.current[2]]} />
-        </>}
+        : (<>
+          <AsideArticlePreview articleObj={articles[articlesValues[0]]} />
+          <AsideArticlePreview articleObj={articles[articlesValues[1]]} />
+          <AsideArticlePreview articleObj={articles[articlesValues[2]]} />
+        </>)}
       <p style={{
         textAlign: 'center',
         textIndent: '0',
