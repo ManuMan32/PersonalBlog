@@ -13,6 +13,7 @@ import OptionsMenu from './components/optionsmenu/OptionsMenu'
 let articles: ArticleType[] = [];
 function App() {
   const defaultArticleObject: ArticleType = {
+    id: "-1",
     maintitle: "Error",
     description: "Error",
     image: "testimg1.jpg",

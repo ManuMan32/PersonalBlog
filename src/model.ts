@@ -1,4 +1,5 @@
 export interface ArticleType {
+  id: string
   maintitle: string
   description: string
   image: string

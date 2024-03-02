@@ -1,3 +1,7 @@
+.asideArticlePreviewLink {
+  color: #fff;
+  text-decoration: none;
+}
 .asideArticlePreview {
   display: grid;
   grid-template: 250px 50px 80px / 1fr;

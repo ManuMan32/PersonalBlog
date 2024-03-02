@@ -6,7 +6,7 @@ interface Props {
 }
 const AsideSocialMedia: React.FC<Props> = ({ name, image, link }) => {
   return (
-    <a className="asideSocialMediaLink" href={link}>
+    <a className="asideSocialMediaLink" href={link} target="_blank">
       <div className="asideSocialMedia">
         <div className="asideSocialMediaImgBox">
           <img className="asideSocialMediaImg" src={image} alt={name} />

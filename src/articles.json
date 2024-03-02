@@ -1,5 +1,6 @@
 {
   "0": {
+    "id": "0",
     "maintitle": "The start of my coding journey",
     "description": "The world of programming is too immense for a 12-year-old boy, isn't it? How I learned about game development and started creating my own communities.",
     "image": "/code1.jpeg",
@@ -24,13 +25,14 @@
       ["p", "He taught me every clean code technique: the switch statements, how to manipulate arrays correctly, how to manage external files, etc. Most of the things I know about programming now are thanks to the Jumping World experience."],
       ["subtitle", "The dark phase of my life:"],
       ["p", "2021 was the worst year of my life, if you want to read more specifically about this topic, I recommend the following article:"],
-      ["link", ["/article/3", "The worst year of my life (The weak boy becoming the most confident of his class)"]],
+      ["link", ["/article/3", "The worst year of my life (The weak boy becoming the most confident of his class)", "true", "3"]],
       ["p", "I spent 2021 - 2023 without using Game Maker. Then, by July of 2023, when I was mentally okay, I decided to learn HTML, CSS, and JavaScript. That was the best decision I've ever made because all the GameMaker experience helped me learn JavaScript very quickly. The only new things were array methods, functions, and DOM manipulation."],
       ["p", "And here we are! In 2024, at 17 years old, I'm learning TypeScript, React, and then I'll move on to backend and Python. Such an interesting journey, full of game development."],
       ["subtitle", "Thank you for reading my story, I'm glad you were interested!"]
     ]
   },
   "1": {
+    "id": "1",
     "maintitle": "Social Media in young people",
     "description": "How do they work? Why are they so important for young people? How they affect behavior? All of this is answered with my experience living them day by day.",
     "image": "/friends1.jpeg",
@@ -66,6 +68,7 @@
     ]
   },
   "2": {
+    "id": "2",
     "maintitle": "My experience in high school",
     "description": "Best or worst years? Is the education system beneficial? Are grades important? Be surprised by the point of view of young people today.",
     "image": "/me5.jpg",
@@ -94,6 +97,7 @@
     ]
   },
   "3": {
+    "id": "3",
     "maintitle": "The worst year of my life",
     "description": "The weak boy becoming the most confident of his class. My hard maturation process.",
     "image": "/me4.jpeg",
@@ -133,13 +137,14 @@
     ]
   },
   "4": {
+    "id": "4",
     "maintitle": "My first games",
     "description": "From Fangames to entire communities. How horrible were my first creations?",
     "image": "/jw4.jpg",
     "content": [
       ["title", "My journey in game development"],
       ["p", "When I was 13 years old, the only things I coded was fangames of games that I liked. I made them using Game Maker (if you want to know more about this, read this article:)"],
-      ["link", ["/article/0", "The start of my coding journey."]],
+      ["link", ["/article/0", "The start of my coding journey.", "true", "0"]],
       ["p", "My first \"serious\" project was a Super Mario Fangame. It sounds super generic, but since I was a guy who liked to do things differently from everyone else, I added my own details. It was not a fangame of the original Mario Bros; it was one for Wii U called \"Paper Mario Color Splash\". I will not go into detail about what differentiates it from a normal Mario, because otherwise this article would become huge, but here are some images of how it looked:"],
       ["galery", ["/mario1.jpg", "/mario2.jpg"]],
       ["galery", ["/mario3.jpg", "/mario4.jpg"]],
@@ -153,10 +158,11 @@
       ["galery", ["/jw1.jpg", "/jw2.jpg"]],
       ["galery", ["/jw3.jpg", "/jw4.jpg"]],
       ["p", "A few months ago, in December 2023, my friend and I decided to remaster the game. We didn't spend much time on it since he's busy with his studies and I have been prioritizing other projects more, but I'm sure that one day we will finish the remaster and revive the community. This is a video that we shared as a preview:"],
-      ["link", ["https://www.youtube.com/watch?v=GmSoohtjAng", "Jumping World 1-1 Showcase"]]
+      ["link", ["https://www.youtube.com/watch?v=GmSoohtjAng", "Jumping World 1-1 Showcase", "false"]]
     ]
   },
   "5": {
+    "id": "5",
     "maintitle": "My X journey",
     "description": "How I started and how I managed to reach where I am.",
     "image": "/twitter1.jpg",
