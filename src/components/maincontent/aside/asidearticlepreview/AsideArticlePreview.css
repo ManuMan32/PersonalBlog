@@ -38,3 +38,19 @@
   text-align: center;
   font-size: 16px;
 }
+
+@Media only screen and (max-width: 1150px) {
+  .asideArticlePreviewLink {
+    width: 90%;
+  }
+  .asideContent1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .asideArticlePreview {
+    height: 320px;
+    grid-template: 200px 40px 80px / 1fr;
+    margin-bottom: 20px;
+  }
+}

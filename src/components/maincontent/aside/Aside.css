@@ -5,3 +5,10 @@
   background-color: var(--ui1);
   height: fit-content;
 }
+
+@Media only screen and (max-width: 1150px) {
+  .aside {
+    display: flex;
+    align-items: center;
+  }
+}

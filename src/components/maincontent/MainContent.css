@@ -11,3 +11,9 @@
   font-size: 60px;
   margin: 20px 10px 40px;
 }
+
+@Media only screen and (max-width: 1150px) {
+  .mainContent {
+    flex-direction: column;
+  }
+}

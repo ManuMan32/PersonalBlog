@@ -14,5 +14,11 @@
 }
 .articles .articlePreview_title { font-size: 36px; }
 .articles .articlePreview_description { font-size: 14px; }
-.articles .articlePreviewBig .articlePreview_title { font-size: 50px; }
+.articles .articlePreviewBig .articlePreview_title { font-size: 44px; }
 .articles .articlePreviewBig .articlePreview_description { font-size: 20px; }
+
+@Media only screen and (max-width: 1150px) {
+  .articles .articlePreview_title { font-size: 28px; }
+  .articles .articlePreviewBig .articlePreview_title { font-size: 38px; }
+  .articles .articlePreviewBig .articlePreview_description { font-size: 16px; }
+}
