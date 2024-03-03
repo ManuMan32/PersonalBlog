@@ -18,6 +18,7 @@ export interface GlobalContextType {
   background: boolean
   setBackground: (_ : boolean) => void
   handleDeleteBackground: (_ : boolean) => void
+  recomendations: number[]
 }
 export const GlobalContext = createContext<GlobalContextType>({
   currentArticle: 0,
@@ -28,6 +29,7 @@ export const GlobalContext = createContext<GlobalContextType>({
   isLoading: true,
   setIsLoading: (_: boolean) => { },
   currentArticleObject: {
+    id: "-1",
     maintitle: "Error",
     description: "Error",
     image: "testimg1.jpg",
@@ -43,6 +45,7 @@ export const GlobalContext = createContext<GlobalContextType>({
   setAnimations: (_: boolean) => { },
   background: true,
   setBackground: (_: boolean) => { },
-  handleDeleteBackground: (_: boolean) => { }
+  handleDeleteBackground: (_: boolean) => { },
+  recomendations: []
 })
 export const useGlobalContext = () => useContext(GlobalContext)

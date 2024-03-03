@@ -3,28 +3,16 @@ import Subtitle from "../article/subtitle/Subtitle";
 import "./Aside.css";
 import AsideArticlePreview from "./asidearticlepreview/AsideArticlePreview";
 import AsideSocialMedia from "./asidesocialmedia/AsideSocialMedia";
-import { useRef, useEffect } from 'react';
 const Aside: React.FC = () => {
-  const { articles, isLoading, currentArticle } = useGlobalContext();
-  function getRandomValues(): number[] {
-    const getValue = () => Math.floor(Math.random() * articles.length)
-    let val1 = getValue();
-    while (val1 == currentArticle) { val1 = getValue() }
-    let val2 = getValue();
-    while (val2 == currentArticle || val1 == val2) { val2 = getValue() }
-    let val3 = getValue();
-    while (val3 == currentArticle || val3 == val1 || val3 == val2) { val3 = getValue() }
-    return [val1, val2, val3];
-  }
-  const articlesValues = getRandomValues();
+  const { articles, isLoading, recomendations } = useGlobalContext();
   return (
     <aside className="aside">
       <Subtitle>Other articles:</Subtitle>
       {(isLoading) ? (<span>Loading...</span>)
         : (<>
-          <AsideArticlePreview articleObj={articles[articlesValues[0]]} />
-          <AsideArticlePreview articleObj={articles[articlesValues[1]]} />
-          <AsideArticlePreview articleObj={articles[articlesValues[2]]} />
+          <AsideArticlePreview articleObj={articles[recomendations[0]]} />
+          <AsideArticlePreview articleObj={articles[recomendations[1]]} />
+          <AsideArticlePreview articleObj={articles[recomendations[2]]} />
         </>)}
       <p style={{
         textAlign: 'center',

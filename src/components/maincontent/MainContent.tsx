@@ -7,7 +7,7 @@ import { useGlobalContext } from "../../globalContext";
 import { useParams } from "react-router-dom";
 const MainContent: React.FC = () => {
   const { articleId } = useParams<{ articleId: string }>();
-  const { isLoading, articles } = useGlobalContext();
+  const { isLoading, articles, recomendations } = useGlobalContext();
   if (isLoading) {
     return (
       <main className="main">
@@ -29,9 +29,9 @@ const MainContent: React.FC = () => {
         </div>
       </main>
       <h3 className="otherArticlesTitle">See other articles</h3>
-      <ArticlePreview articleObject={articles[0]} target={0}/>
-      <ArticlePreview articleObject={articles[1]} target={1}/>
-      <ArticlePreview articleObject={articles[2]} target={2}/>
+      <ArticlePreview articleObject={articles[recomendations[0]]} target={recomendations[0]}/>
+      <ArticlePreview articleObject={articles[recomendations[1]]} target={recomendations[1]}/>
+      <ArticlePreview articleObject={articles[recomendations[2]]} target={recomendations[2]}/>
     </>
   )
 }

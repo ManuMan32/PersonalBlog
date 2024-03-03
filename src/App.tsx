@@ -28,6 +28,7 @@ function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [optionsShown, setOptionsShown] = useState<boolean>(false);
   const [scrolleable, setScrolleable] = useState<boolean>(true); // Used for options modal
+  const [recomendations, setRecomendations] = useState<number[]>([0, 1, 2]);
   // User options
   const [theme, setTheme] = useState<Theme>("dark");
   const [animations, setAnimations] = useState<boolean>(true);
@@ -53,6 +54,7 @@ function App() {
     }
     setTheme(newTheme);
   }
+  // Functions
   function handleDeleteBackground(newValue: boolean) {
     if (newValue) {
       (theme == "dark") ? root.style.setProperty('--ui4', '#000')
@@ -63,6 +65,17 @@ function App() {
     }
     setBackground(!newValue);
   }
+  function getRandomArticles(): number[] {
+    const getValue = () => Math.floor(Math.random() * 5)
+    let val1 = getValue();
+    while (val1 == currentArticle) { val1 = getValue() }
+    let val2 = getValue();
+    while (val2 == currentArticle || val1 == val2) { val2 = getValue() }
+    let val3 = getValue();
+    while (val3 == currentArticle || val3 == val1 || val3 == val2) { val3 = getValue() }
+    return [val1, val2, val3];
+  }
+  // Effects
   useEffect(() => {
     const fetchData = async (currentArticle: number): Promise<void> => {
       try {
@@ -77,7 +90,10 @@ function App() {
       }
     }
     fetchData(currentArticle);
-  }, [])
+  }, []);
+  useEffect(() => {
+    setRecomendations(getRandomArticles());
+  }, [currentArticle]);
   return (
     <div id='app' style={{
       overflow: (scrolleable) ? "auto" : "hidden"
@@ -99,7 +115,8 @@ function App() {
         setAnimations,
         background,
         setBackground,
-        handleDeleteBackground
+        handleDeleteBackground,
+        recomendations
       }}>
         <Nav />
         <Routes>
@@ -113,5 +130,4 @@ function App() {
     </div>
   )
 }
-
 export default App
