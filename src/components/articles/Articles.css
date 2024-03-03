@@ -22,3 +22,12 @@
   .articles .articlePreviewBig .articlePreview_title { font-size: 38px; }
   .articles .articlePreviewBig .articlePreview_description { font-size: 16px; }
 }
+@Media only screen and (max-width: 900px) {
+  .articles {
+    display: flex;
+    flex-direction: column;
+  }
+  .articles .articlePreviewBig {
+    height: 200px;
+  }
+}

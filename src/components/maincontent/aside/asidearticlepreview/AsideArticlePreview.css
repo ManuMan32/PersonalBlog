@@ -54,3 +54,21 @@
     margin-bottom: 20px;
   }
 }
+@Media only screen and (max-width: 900px) {
+  .asideArticlePreviewLink {
+    width: 70%;
+  }
+  .asideArticlePreview {
+    height: 500px;
+    grid-template: 350px 70px 80px / 1fr;
+    margin-bottom: 20px;
+  }
+  .asideArticlePreviewImageBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .asideArticlePreviewImage {
+    width: 70%;
+  }
+}

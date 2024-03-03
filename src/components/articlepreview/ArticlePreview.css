@@ -50,3 +50,15 @@
   text-align: center;
   text-indent: 0;
 }
+
+@Media only screen and (max-width: 900px) {
+  .articlePreview {
+    margin: 10px 50px;
+  }
+  .articlePreview_title {
+    font-size: 30px;
+  }
+  .articlePreview_description {
+    font-size: 16px;
+  }
+}

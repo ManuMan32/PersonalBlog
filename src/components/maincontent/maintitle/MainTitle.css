@@ -20,3 +20,13 @@
   50% { transform: translateY(-12px); }
   100% { transform: translateY(0); }
 }
+
+@Media only screen and (max-width: 900px) {
+  .mainTitleLetters_Letter {
+    font-size: 34px;
+    margin: 1px;
+  }
+  .mainTitleLetters_Space {
+    margin: 5px 9px;
+  }
+}
