@@ -42,7 +42,7 @@ const MainTitle: React.FC<Props> = ({ isLoading, type }) => {
   )
   return (
     <div className="mainTitle">
-      <div className="mainTitleLetters" style={{ fontSize: ((type == "main") ? "70px" : "45px") }}>
+      <div className={"mainTitleLetters" + ((type == "main") ? " mainTitleBig" : "")}>
         {(type == "main") ? "Manu's Blog"
           : (titleArray.map((letter, i) => {
             return <span

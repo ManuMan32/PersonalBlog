@@ -1,4 +1,4 @@
-import { useGlobalContext } from "../../globalContext";
+import { useGlobalContext } from "../../../globalContext";
 import "./NavMobile.css";
 import { Link } from "react-router-dom";
 import { useState } from 'react';
@@ -26,7 +26,7 @@ const NavMobile: React.FC = () => {
         </li>
         <li className="navMobileListElement">
           <div className="navMobileListToggleMenu" onClick={handleClickMenu}>
-            <img src="iconMenu.svg" alt="Menu" />
+            <img src="/iconMenu.svg" alt="Menu" />
           </div>
         </li>
       </ul>
@@ -35,19 +35,19 @@ const NavMobile: React.FC = () => {
       }}>
         <li className="navMobileListMenuElement">
           <Link to="/" onClick={handleCloseMenu}>
-            <img className="navMobileListMenuElementIcon" src="iconHome.svg" alt="Home" />
+            <img className="navMobileListMenuElementIcon" src="/iconHome.svg" alt="Home" />
             Home
           </Link>
         </li>
         <li className="navMobileListMenuElement">
           <Link to="articles" onClick={handleCloseMenu}>
-            <img className="navMobileListMenuElementIcon" src="iconArticle.svg" alt="Articles" />
+            <img className="navMobileListMenuElementIcon" src="/iconArticle.svg" alt="Articles" />
             Articles
           </Link>
         </li>
         <li className="navMobileListMenuElement">
           <div className="navMobileOptionsButton" onClick={handleClickOptions}>
-            <img className="navMobileListMenuElementIcon" src="iconSettings.svg" alt="Settings" />
+            <img className="navMobileListMenuElementIcon" src="/iconSettings.svg" alt="Settings" />
             Options
           </div>
         </li>

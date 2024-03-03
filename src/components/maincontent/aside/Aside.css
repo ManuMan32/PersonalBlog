@@ -5,6 +5,11 @@
   background-color: var(--ui1);
   height: fit-content;
 }
+.aside .subtitle {
+  display: block;
+  text-align: center;
+  text-indent: 0;
+}
 
 @Media only screen and (max-width: 1150px) {
   .aside {
@@ -15,5 +20,10 @@
 @Media only screen and (max-width: 900px) {
   .aside {
     flex-direction: column;
+  }
+}
+@Media only screen and (max-width: 500px) {
+  .aside {
+    padding: 0
   }
 }

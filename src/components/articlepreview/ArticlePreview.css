@@ -62,3 +62,17 @@
     font-size: 16px !important;
   }
 }
+@Media only screen and (max-width: 500px) {
+  .articlePreview {
+    margin: 10px;
+  }
+  .articlePreviewImg {
+    padding: 10px;
+  }
+  .articlePreview_title, articlePreviewBig .articlePreview_title {
+    font-size: 22px !important;
+  }
+  .articlePreview_description, articlePreviewBig .articlePreview_description {
+    font-size: 14px !important;
+  }
+}

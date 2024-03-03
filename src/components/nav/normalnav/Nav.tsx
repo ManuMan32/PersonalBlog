@@ -1,4 +1,4 @@
-import { useGlobalContext } from "../../globalContext";
+import { useGlobalContext } from "../../../globalContext";
 import "./Nav.css";
 import { Link } from "react-router-dom";
 const Nav: React.FC = () => {

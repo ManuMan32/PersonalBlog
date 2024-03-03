@@ -80,3 +80,21 @@
     width: 90%;
   }
 }
+@Media only screen and (max-width: 500px) {
+  .asideArticlePreviewLink {
+    width: 95%;
+  }
+  .asideArticlePreview {
+    margin: 2px;
+    margin-bottom: 50px;
+  }
+  .asideArticlePreviewImage {
+    width: 100%;
+  }
+  .asideArticlePreviewTitle {
+    font-size: 18px;
+  }
+  .asideArticlePreviewDescription {
+    font-size: 14px;
+  }
+}

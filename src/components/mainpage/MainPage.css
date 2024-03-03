@@ -1,7 +1,7 @@
 .mainPage {
   flex: 1;
   margin: 0 20px;
-  padding: 40px;
+  padding: 10px;
   background-color: var(--ui1);
   font-size: 24px;
   line-height: 36px;
@@ -16,4 +16,10 @@
   margin: 70px 0 0;
   text-indent: 0;
   text-align: center;
+}
+
+@Media only screen and (max-width: 500px) {
+  .mainPage {
+    margin: 0;
+  }
 }

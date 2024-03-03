@@ -12,3 +12,13 @@ p {
   text-indent: 2rem;
   font-family: 'Roboto Serif';
 }
+
+@Media only screen and (max-width: 500px) {
+  .article {
+    padding: 10px;
+    margin: 0;
+  }
+  p {
+    font-size: 18px;
+  }
+}

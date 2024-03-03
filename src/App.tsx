@@ -1,7 +1,6 @@
 import './App.css'
 import Footer from './components/footer/Footer'
 import MainContent from './components/maincontent/MainContent'
-import Nav from './components/nav/Nav'
 import { useState, useEffect } from "react"
 import { GlobalContext } from './globalContext'
 import MainPage from './components/mainpage/MainPage'
@@ -9,7 +8,7 @@ import { ArticleType, Theme } from './model'
 import { Route, Routes } from 'react-router-dom'
 import Articles from './components/articles/Articles'
 import OptionsMenu from './components/optionsmenu/OptionsMenu'
-import NavMobile from './components/navmobile/NavMobile'
+import CheckNav from './components/nav/CheckNav'
 
 let articles: ArticleType[] = [];
 function App() {
@@ -119,7 +118,7 @@ function App() {
         handleDeleteBackground,
         recomendations
       }}>
-        <NavMobile />
+        <CheckNav />
         <Routes>
           <Route path='/' element={<MainPage />} />
           <Route path='/articles' element={<Articles />} />

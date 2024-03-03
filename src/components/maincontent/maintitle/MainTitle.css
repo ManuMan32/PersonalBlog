@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   height: 200px;
+  font-size: 40px;
 }
 .mainTitleLetters {
   display: flex;
@@ -14,6 +15,9 @@
 }
 .mainTitleLetters_Space {
   margin: 5px 15px;
+}
+.mainTitleBig {
+  font-size: 70px;
 }
 @keyframes letterAnimation {
   0% { transform: translateY(0); }
@@ -30,12 +34,15 @@
     margin: 5px 9px;
   }
 }
-@Media only screen and (max-width: 500px) {
+@Media only screen and (max-width: 700px) {
   .mainTitleLetters_Letter {
-    font-size: 24px;
+    font-size: 22px;
     margin: 0;
   }
   .mainTitleLetters_Space {
-    margin: 5px 6px;
+    margin: 5px 5px;
+  }
+  .mainTitleBig {
+    font-size: 40px;
   }
 }
