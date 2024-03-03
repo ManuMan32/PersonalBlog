@@ -72,3 +72,11 @@
     width: 70%;
   }
 }
+@Media only screen and (max-width: 700px) {
+  .asideArticlePreviewLink {
+    width: 85%;
+  }
+  .asideArticlePreviewImage {
+    width: 90%;
+  }
+}

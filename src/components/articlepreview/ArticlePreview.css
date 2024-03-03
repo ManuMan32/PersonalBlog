@@ -55,10 +55,10 @@
   .articlePreview {
     margin: 10px 50px;
   }
-  .articlePreview_title {
-    font-size: 30px;
+  .articlePreview_title, articlePreviewBig .articlePreview_title {
+    font-size: 30px !important;
   }
-  .articlePreview_description {
-    font-size: 16px;
+  .articlePreview_description, articlePreviewBig .articlePreview_description {
+    font-size: 16px !important;
   }
 }

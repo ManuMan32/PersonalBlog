@@ -30,7 +30,7 @@
     margin: 5px 9px;
   }
 }
-@Media only screen and (max-width: 700px) {
+@Media only screen and (max-width: 500px) {
   .mainTitleLetters_Letter {
     font-size: 24px;
     margin: 0;
