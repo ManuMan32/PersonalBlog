@@ -42,9 +42,6 @@
   width: 100%;
   height: 100%;
 }
-.navMobileListToggleMenu img {
-  filter: invert(100%);
-}
 .navMobileListMenu {
   display: flex;
   flex-direction: column;

@@ -1,5 +1,5 @@
 .asideArticlePreviewLink {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
 }
 .asideArticlePreview {

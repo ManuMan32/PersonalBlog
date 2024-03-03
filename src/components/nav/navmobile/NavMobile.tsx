@@ -21,12 +21,12 @@ const NavMobile: React.FC = () => {
       <ul className="navMobileList">
         <li className="navMobileListElement">
           <a href="https://manuelcrocco.glitch.me/">
-            <img src="/iconM.svg" alt="M" style={{ filter: 'invert' + ((theme == "light") ? "(100%)" : "(0%)") }}/>
+            <img src="/iconM.svg" alt="M" style={{ filter: 'invert' + ((theme == "light") ? "(100%)" : "(0%)") }} />
           </a>
         </li>
         <li className="navMobileListElement">
           <div className="navMobileListToggleMenu" onClick={handleClickMenu}>
-            <img src="/iconMenu.svg" alt="Menu" />
+            <img src="/iconMenu.svg" alt="Menu" style={{ filter: 'invert' + ((theme == "light") ? "(0%)" : "(100%)") }} />
           </div>
         </li>
       </ul>
