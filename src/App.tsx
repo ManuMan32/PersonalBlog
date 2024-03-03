@@ -9,6 +9,7 @@ import { ArticleType, Theme } from './model'
 import { Route, Routes } from 'react-router-dom'
 import Articles from './components/articles/Articles'
 import OptionsMenu from './components/optionsmenu/OptionsMenu'
+import NavMobile from './components/navmobile/NavMobile'
 
 let articles: ArticleType[] = [];
 function App() {
@@ -118,7 +119,7 @@ function App() {
         handleDeleteBackground,
         recomendations
       }}>
-        <Nav />
+        <NavMobile />
         <Routes>
           <Route path='/' element={<MainPage />} />
           <Route path='/articles' element={<Articles />} />
