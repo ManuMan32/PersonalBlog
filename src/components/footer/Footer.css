@@ -31,10 +31,24 @@
   justify-content: space-evenly;
 }
 .footerSocialMedia_Link {
+  position: relative;
   height: 30px;
 }
 .footerSocialMedia_Link > img {
   height: 100%;
+}
+.footerTooltip {
+  position: absolute;
+  top: 3%;
+  left: -75%;
+  background-color: var(--ui4);
+  padding: 5px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.footerSocialMedia_Link:hover > img + .footerTooltip {
+  opacity: 1;
 }
 
 @Media only screen and (max-width: 500px) {

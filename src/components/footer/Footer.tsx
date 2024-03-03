@@ -24,9 +24,10 @@ const Footer: React.FC = () => {
         <a className="footerSocialMedia_Link" href="https://github.com/ManuMan32" target="_blank">
           <img src="/iconGithub.svg" alt="GitHub" style={{ filter: 'invert' + ((theme == "light") ? "(100%)" : "(0%)") }} />
         </a>
-        <a className="footerSocialMedia_Link" href="https://twitter.com/ManuCro32" target="_blank">
+        <div className="footerSocialMedia_Link">
           <img src="/iconDiscord.svg" alt="Discord" style={{ filter: 'invert' + ((theme == "light") ? "(100%)" : "(0%)") }} />
-        </a>
+          <span className="footerTooltip">manuman_</span>
+        </div>
       </div>
     </footer>
   )
