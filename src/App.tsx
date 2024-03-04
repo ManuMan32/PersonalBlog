@@ -43,6 +43,7 @@ function App() {
       root.style.setProperty('--button-hover', '#444');
       root.style.setProperty('--button-active', '#555');
       root.style.setProperty('--text-color', '#fff');
+      root.style.setProperty('--link-color', '#0cf');
     } else {
       root.style.setProperty('--ui1', '#ddd');
       root.style.setProperty('--ui2', '#fff');
@@ -51,6 +52,7 @@ function App() {
       root.style.setProperty('--button-hover', '#ccc');
       root.style.setProperty('--button-active', '#aaa');
       root.style.setProperty('--text-color', '#222');
+      root.style.setProperty('--link-color', '#07c');
     }
     setTheme(newTheme);
   }

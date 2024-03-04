@@ -1,5 +1,5 @@
 .articleLink {
   display: block;
   text-align: center;
-  color: #0cf;
+  color: var(--link-color);
 }
