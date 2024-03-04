@@ -39,7 +39,6 @@ function App() {
       root.style.setProperty('--ui1', '#333');
       root.style.setProperty('--ui2', '#000');
       root.style.setProperty('--ui3', '#272727');
-      root.style.setProperty('--ui4', (background) ? '#141414' : '#000');
       root.style.setProperty('--button-hover', '#444');
       root.style.setProperty('--button-active', '#555');
       root.style.setProperty('--text-color', '#fff');
@@ -48,21 +47,21 @@ function App() {
       root.style.setProperty('--ui1', '#ddd');
       root.style.setProperty('--ui2', '#fff');
       root.style.setProperty('--ui3', '#ddd');
-      root.style.setProperty('--ui4', (background) ? '#eaeaea' : '#fff');
       root.style.setProperty('--button-hover', '#ccc');
       root.style.setProperty('--button-active', '#aaa');
       root.style.setProperty('--text-color', '#222');
       root.style.setProperty('--link-color', '#07c');
     }
     setTheme(newTheme);
+    handleDeleteBackground(!background, newTheme);
   }
   // Functions
-  function handleDeleteBackground(newValue: boolean) {
+  function handleDeleteBackground(newValue: boolean, newTheme: Theme = theme) {
     if (newValue) {
-      (theme == "dark") ? root.style.setProperty('--ui4', '#000')
+      (newTheme == "dark") ? root.style.setProperty('--ui4', '#000')
         : root.style.setProperty('--ui4', '#fff');
     } else {
-      (theme == "dark") ? root.style.setProperty('--ui4', '#141414')
+      (newTheme == "dark") ? root.style.setProperty('--ui4', '#141414')
         : root.style.setProperty('--ui4', '#eaeaea');
     }
     setBackground(!newValue);
@@ -79,6 +78,7 @@ function App() {
   }
   // Effects
   useEffect(() => {
+    // Fetch data
     const fetchData = async (currentArticle: number): Promise<void> => {
       try {
         const response = await fetch("http://localhost:5173/src/articles.json");
@@ -92,7 +92,21 @@ function App() {
       }
     }
     fetchData(currentArticle);
+    // Load settings
+    const loadAnimationsString = localStorage.getItem("animations");
+    const loadAnimations: boolean = (loadAnimationsString == 'true');
+    if (loadAnimations != undefined) setAnimations(loadAnimations);
+    const loadTheme: Theme | undefined = localStorage.getItem("theme") as Theme;
+    if (loadTheme != undefined) handleChangeTheme(loadTheme);
+    const loadBackgroundString = localStorage.getItem("background");
+    const loadBackground: boolean = (loadBackgroundString == 'true');
+    if (loadBackground != undefined) handleDeleteBackground(!loadBackground, loadTheme);
   }, []);
+  window.addEventListener('beforeunload', () => {
+    localStorage.setItem("theme", theme);
+    localStorage.setItem("animations", animations.toString());
+    localStorage.setItem("background", background.toString());
+  })
   useEffect(() => {
     setRecomendations(getRandomArticles());
   }, [currentArticle]);
