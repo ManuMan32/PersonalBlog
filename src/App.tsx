@@ -94,19 +94,19 @@ function App() {
     fetchData(currentArticle);
     // Load settings
     const loadAnimationsString = localStorage.getItem("animations");
-    const loadAnimations: boolean = (loadAnimationsString == 'true');
+    let loadAnimations: boolean = (loadAnimationsString == 'true' || loadAnimationsString == null);
     if (loadAnimations != undefined) setAnimations(loadAnimations);
     const loadTheme: Theme | undefined = localStorage.getItem("theme") as Theme;
     if (loadTheme != undefined) handleChangeTheme(loadTheme);
     const loadBackgroundString = localStorage.getItem("background");
-    const loadBackground: boolean = (loadBackgroundString == 'true');
-    if (loadBackground != undefined) handleDeleteBackground(!loadBackground, loadTheme);
+    const loadBackground: boolean = (loadBackgroundString == 'true' || loadBackgroundString == null);
+    if (loadBackground != undefined) handleDeleteBackground(!loadBackground, (loadTheme == null) ? "dark" : loadTheme);
   }, []);
-  window.addEventListener('beforeunload', () => {
-    localStorage.setItem("theme", theme);
-    localStorage.setItem("animations", animations.toString());
-    localStorage.setItem("background", background.toString());
-  })
+  // window.addEventListener('beforeunload', () => {
+  //   localStorage.setItem("theme", theme);
+  //   localStorage.setItem("animations", animations.toString());
+  //   localStorage.setItem("background", background.toString());
+  // })
   useEffect(() => {
     setRecomendations(getRandomArticles());
   }, [currentArticle]);
