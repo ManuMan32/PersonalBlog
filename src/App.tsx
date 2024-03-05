@@ -102,11 +102,11 @@ function App() {
     const loadBackground: boolean = (loadBackgroundString == 'true' || loadBackgroundString == null);
     if (loadBackground != undefined) handleDeleteBackground(!loadBackground, (loadTheme == null) ? "dark" : loadTheme);
   }, []);
-  // window.addEventListener('beforeunload', () => {
-  //   localStorage.setItem("theme", theme);
-  //   localStorage.setItem("animations", animations.toString());
-  //   localStorage.setItem("background", background.toString());
-  // })
+  window.addEventListener('beforeunload', () => {
+    localStorage.setItem("theme", theme);
+    localStorage.setItem("animations", animations.toString());
+    localStorage.setItem("background", background.toString());
+  })
   useEffect(() => {
     setRecomendations(getRandomArticles());
   }, [currentArticle]);
