@@ -81,7 +81,7 @@ function App() {
     // Fetch data
     const fetchData = async (currentArticle: number): Promise<void> => {
       try {
-        const response = await fetch("./src/articles.json");
+        const response = await fetch("/articles.json");
         if (!response.ok) { throw new Error("The articles data couldn't be loaded."); }
         const data = await response.json();
         articles = Object.values(data);
