@@ -1,7 +1,6 @@
 import "./MainPage.css";
 import Title from "../maincontent/article/title/Title";
 import Subtitle from "../maincontent/article/subtitle/Subtitle";
-import Galery from "../maincontent/article/galery/Galery";
 import MainTitle from "../maincontent/maintitle/MainTitle";
 import ArticlePreview from "../articlepreview/ArticlePreview";
 import { useGlobalContext } from "../../globalContext";
