@@ -31,8 +31,8 @@ function App() {
   const [recomendations, setRecomendations] = useState<number[]>([0, 1, 2]);
   // User options
   const [theme, setTheme] = useState<Theme>("dark");
-  const [animations, setAnimations] = useState<boolean>(true);
-  const [background, setBackground] = useState<boolean>(true);
+  const [animations, setAnimations] = useState<boolean>(false);
+  const [background, setBackground] = useState<boolean>(false);
   const root = document.documentElement;
   function handleChangeTheme(newTheme: Theme) {
     if (newTheme == "dark") {
