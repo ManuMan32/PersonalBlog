@@ -11,7 +11,7 @@ const Nav: React.FC = () => {
     <nav className="nav">
       <ul className="navList">
         <li className="navListElement">
-          <a href="https://manuelcrocco.glitch.me/">
+          <a href="https://manucro.vercel.app/">
             <img src="/iconM.svg" alt="M" style={{ filter: 'invert' + ((theme == "light") ? "(100%)" : "(0%)") }}/>
           </a>
         </li>

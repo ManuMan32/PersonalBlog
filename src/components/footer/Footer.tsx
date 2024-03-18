@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="footerLinks_Link">
           <img src="/iconWebsite.svg" alt="Email" style={{ filter: 'invert' + ((theme == "light") ? "(0%)" : "(100%)") }} />
-          <a className="footerLink_LinkText" href="https://manuelcrocco.glitch.me/" target="_blank">Visit my portfolio</a>
+          <a className="footerLink_LinkText" href="https://manucro.vercel.app/" target="_blank">Visit my portfolio</a>
         </div>
       </div>
       <div className="footerSocialMedia">
